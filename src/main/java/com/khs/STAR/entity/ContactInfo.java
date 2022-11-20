@@ -13,24 +13,20 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Award {
+public class ContactInfo {
 
 
     @Id
     @SequenceGenerator(
-            name = "award_sequence",
-            sequenceName = "award_sequence",
+            name = "contact_sequence",
+            sequenceName = "contact_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "award_sequence"
+            generator = "contact_sequence"
     )
     private Long id;
 
-    private String membersOfAward;
-    private Date date;
-    private String awardName;
-    private String pictureOfAwardURL;
-    private String description;
+    private String emailToContact;
 }

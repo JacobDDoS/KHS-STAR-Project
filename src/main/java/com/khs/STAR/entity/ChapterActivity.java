@@ -13,24 +13,24 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Award {
+public class ChapterActivity {
 
 
     @Id
     @SequenceGenerator(
-            name = "award_sequence",
-            sequenceName = "award_sequence",
+            name = "chapterActivity_sequence",
+            sequenceName = "chapterActivity_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "award_sequence"
+            generator = "chapterActivity_sequence"
     )
     private Long id;
 
-    private String membersOfAward;
-    private Date date;
-    private String awardName;
-    private String pictureOfAwardURL;
+    private String photoURL;
+    private Date startDate;
+    private Date endDate;
+    private String nameOfActivity;
     private String description;
 }

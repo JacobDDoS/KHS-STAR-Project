@@ -14,7 +14,7 @@ import java.util.Date;
 @SpringBootTest // This will persist data
 //@DataJpaTest // This will not persist data
 //@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class DataControllerTests {
+public class DataRepositoryTests {
 
     @Autowired
     private AwardRepository awardRepository;
