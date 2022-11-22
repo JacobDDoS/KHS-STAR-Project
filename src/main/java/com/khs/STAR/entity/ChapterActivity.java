@@ -32,5 +32,7 @@ public class ChapterActivity {
     private Date startDate;
     private Date endDate;
     private String nameOfActivity;
+
+    @Column(length=1000)
     private String description;
 }

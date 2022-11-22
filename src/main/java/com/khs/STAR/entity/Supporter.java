@@ -32,4 +32,6 @@ public class Supporter {
     private String logoURL;
     private String link;
 
+    @Column(length=1000)
+    private String description;
 }

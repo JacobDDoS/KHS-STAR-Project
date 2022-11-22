@@ -32,5 +32,7 @@ public class Award {
     private Date date;
     private String awardName;
     private String pictureOfAwardURL;
+
+    @Column(length=1000)
     private String description;
 }

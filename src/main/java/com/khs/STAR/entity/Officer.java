@@ -32,7 +32,11 @@ public class Officer {
     private String officerPosition;
     private Date startTime;
     private Date endTime;
+
+    @Column(length=1000)
     private String chapterResponsibilities;
+
+    @Column(length=1000)
     private String chapterServiceOrCareerGoals;
     private String email;
     private String photoURL;
