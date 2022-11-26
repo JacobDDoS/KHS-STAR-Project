@@ -31,6 +31,8 @@ public class Award {
     private String membersOfAward;
     private Date date;
     private String awardName;
+
+    @Column(columnDefinition = "TEXT")
     private String pictureOfAwardURL;
 
     @Column(length=1000)

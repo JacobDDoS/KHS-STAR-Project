@@ -3,10 +3,7 @@ package com.khs.STAR;
 import com.khs.STAR.entity.*;
 import com.khs.STAR.repository.*;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
 import java.util.List;
@@ -34,24 +31,18 @@ public class DataController {
     }
 
     @PostMapping("/api/addAward")
-    public Award addAward(String members,
-                          Date date,
-                          String awardName,
-                          String pictureURL,
-                          String description) {
-        Award award = Award.builder()
-                .membersOfAward(members)
-                .date(date)
-                .awardName(awardName)
-                .pictureOfAwardURL(pictureURL)
-                .description(description)
-                .build();
-
+    public Award addAward(@RequestBody Award award) {
         awardRepository.save(award);
         return award;
     }
 
-    @GetMapping("/api/awards")
+    @GetMapping("date")
+    public Date getDate() {
+        Date date = new Date();
+        return date;
+    }
+
+    @GetMapping("awards")
     public List<Award> getAllAwards() {
         return awardRepository.findAll();
     }

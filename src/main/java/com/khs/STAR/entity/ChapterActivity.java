@@ -28,6 +28,7 @@ public class ChapterActivity {
     )
     private Long id;
 
+    @Column(columnDefinition = "TEXT")
     private String photoURL;
     private Date startDate;
     private Date endDate;

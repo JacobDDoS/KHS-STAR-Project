@@ -38,20 +38,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         //Create Admin user if it doesn't exist
         if (userRepository.findFirstByUsernameOrderById(usernameOfAdminUser) == null) {
-            System.out.println("Created admin user");
             User user = new User(
                     usernameOfAdminUser,
                     passwordEncoder.encode(passwordOfAdminUser)
             );
 
             userRepository.save(user);
-        } else {
-            System.out.println("Admin user already created");
         }
 
         http
-                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
-                .and()
+//                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+//                .and()
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/*").permitAll()
                 .antMatchers("/api/**").hasRole(ADMIN.name())

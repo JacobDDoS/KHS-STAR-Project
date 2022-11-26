@@ -41,8 +41,6 @@ public class UserService implements UserDetailsService {
                 true
         );
 
-        System.out.println("adminUserDetails = " + adminUserDetails);
-
         return adminUserDetails;
 
     }

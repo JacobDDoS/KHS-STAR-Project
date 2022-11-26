@@ -39,5 +39,7 @@ public class Officer {
     @Column(length=1000)
     private String chapterServiceOrCareerGoals;
     private String email;
+
+    @Column(columnDefinition = "TEXT")
     private String photoURL;
 }
