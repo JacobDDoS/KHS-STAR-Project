@@ -30,10 +30,46 @@ public class DataController {
         this.supporterRepository = supporterRepository;
     }
 
-    @PostMapping("/api/addAward")
+    @PostMapping("/api/add/Award")
     public Award addAward(@RequestBody Award award) {
         awardRepository.save(award);
         return award;
+    }
+
+    @PostMapping("/api/add/ChapterActivity")
+    public ChapterActivity addChapterActivity(@RequestBody ChapterActivity chapterActivity) {
+        chapterActivityRepository.save(chapterActivity);
+        return chapterActivity;
+    }
+
+    @PostMapping("/api/add/ContactInfo")
+    public ContactInfo addContactInfo(@RequestBody ContactInfo contactInfo) {
+        contactInfoRepository.save(contactInfo);
+        return contactInfo;
+    }
+
+    @PostMapping("/api/add/Officer")
+    public Officer addOfficer(@RequestBody Officer officer) {
+        officerRepository.save(officer);
+        return officer;
+    }
+
+    @PostMapping("/api/add/ProgramOfWork")
+    public ProgramOfWork addProgramOfWork(@RequestBody ProgramOfWork programOfWork) {
+        programOfWorkRepository.save(programOfWork);
+        return programOfWork;
+    }
+
+    @PostMapping("/api/add/Source")
+    public Source addSource(@RequestBody Source source) {
+        sourceRepository.save(source);
+        return source;
+    }
+
+    @PostMapping("/api/add/Supporter")
+    public Supporter addSupporter(@RequestBody Supporter supporter) {
+        supporterRepository.save(supporter);
+        return supporter;
     }
 
     @GetMapping("date")
