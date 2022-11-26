@@ -33,7 +33,7 @@ public class DataController {
         this.supporterRepository = supporterRepository;
     }
 
-    @PostMapping("addAward")
+    @PostMapping("/api/addAward")
     public Award addAward(String members,
                           Date date,
                           String awardName,
@@ -51,7 +51,7 @@ public class DataController {
         return award;
     }
 
-    @GetMapping("awards")
+    @GetMapping("/api/awards")
     public List<Award> getAllAwards() {
         return awardRepository.findAll();
     }
