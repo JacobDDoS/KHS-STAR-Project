@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  /* colors */
+  --primary-red: #FF0000;
+  --secondary-red: #F40000;
+  --tertiary-red: #E50000;
+
+  --primary-gray: #808080;
+  --secondary-gray: #A0A0A0;
+  --tertiary-gray: #C0C0C0;
+
+  /* font-sizes */
+  --fs-900: 4rem;
+  --fs-800: 3.5rem;
+  --fs-700: 3rem;
+  --fs-600: 2.5rem;
+  --fs-500: 2rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1rem;
+  --fs-200: 0.5rem;
+
+  /* font-families */
+  --ff-primary: 'Inter', sans-serif;
+  --ff-secondary: "Ubuntu", sans-serif;
+  --ff-tertiary: "Oswald", sans-serif;
+
+}
+
+/* font-sizes */
+.fs-900 {font-size: var(--fs-900);}
+.fs-800 {font-size: var(--fs-800);}
+.fs-700 {font-size: var(--fs-700);}
+.fs-600 {font-size: var(--fs-600);}
+.fs-500 {font-size: var(--fs-500);}
+.fs-400 {font-size: var(--fs-400);}
+.fs-300 {font-size: var(--fs-300);}
+.fs-200 {font-size: var(--fs-200);}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(var(--columns, 2), 1fr);
+}
+
+/* Margin */
+.m-5 {
+  margin: 5px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+/* Default styles */
+h1 {
+  font-size: var(--fs-800);
+  font-family: var(--ff-primary);
+}
+
+h2 {
+  font-size: var(--fs-600);
+  font-family: var(--ff-secondary);
+}

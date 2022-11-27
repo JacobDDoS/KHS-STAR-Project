@@ -1,9 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Design from './Pages/Design';
 
 function App() {
   return (
-    <p> FCCLA </p>
+    <Router>
+      <Routes>
+        <Route path="/design" element={<Design/>} />
+      </Routes>
+    </Router>
   );
 }
 
