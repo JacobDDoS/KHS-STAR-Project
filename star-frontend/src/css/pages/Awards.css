@@ -1,8 +1,8 @@
-* {
+#awards * {
     --height: 200px;
 }
 
-.title-container {
+#awards .title-container {
     width: 100%;
     height: var(--height);
 
@@ -10,7 +10,7 @@
     line-height: var(--height);
 }
 
-.title-container * {
+#awards .title-container * {
     font-size: var(--fs-900);
     text-decoration: underline;
     text-decoration-color: var(--primary-red);

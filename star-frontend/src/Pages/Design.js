@@ -3,7 +3,7 @@ import '../css/pages/Design.css'
 
 const Design = () => {
   return (
-    <div id='main-container'>
+    <div id='design-main-container'>
         <div className='section-container'>
             <div className='grid'>
                 <div style={{"borderRight": "5px solid black"}}>
