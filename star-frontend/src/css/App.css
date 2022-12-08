@@ -15,12 +15,12 @@
 
   /* font-sizes */
   --fs-900: 4rem;
-  --fs-800: 3.5rem;
-  --fs-700: 3rem;
-  --fs-600: 2.5rem;
-  --fs-500: 2rem;
-  --fs-400: 1.5rem;
-  --fs-300: 1rem;
+  --fs-800: 2rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1rem;
+  --fs-500: 0.9rem;
+  --fs-400: 0.875rem;
+  --fs-300: 0.75rem;
   --fs-200: 0.5rem;
 
   /* font-families */
@@ -28,6 +28,35 @@
   --ff-secondary: "Ubuntu", sans-serif;
   --ff-tertiary: "Oswald", sans-serif;
 
+}
+
+/* Tablet  */
+@media (min-width: 35em) {
+  * {
+    --fs-900: 4rem;
+    --fs-800: 3rem;
+    --fs-700: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.2rem;
+    --fs-400: 1rem;
+    --fs-300: 0.75rem;
+    --fs-200: 0.5rem;
+  }
+}
+
+
+/* Desktop  */
+@media (min-width: 45em) {
+  * {
+    --fs-900: 4rem;
+    --fs-800: 3.5rem;
+    --fs-700: 3rem;
+    --fs-600: 2.5rem;
+    --fs-500: 2rem;
+    --fs-400: 1.5rem;
+    --fs-300: 1rem;
+    --fs-200: 0.5rem;
+  }
 }
 
 /* font-sizes */
@@ -39,6 +68,53 @@
 .fs-400 {font-size: var(--fs-400);}
 .fs-300 {font-size: var(--fs-300);}
 .fs-200 {font-size: var(--fs-200);}
+
+/* Font Families */
+.primary-ff {
+  font-family: var(--ff-primary);
+}
+
+.secondary-ff {
+  font-family: var(--ff-secondary);
+}
+
+.tertiary-ff {
+  font-family: var(--ff-tertiary);
+}
+
+h2 {
+  font-size: var(--fs-800);
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+/* Colors */
+.primary-red {
+  background-color: var(--primary-red);
+}
+
+.secondary-red {
+  background-color: var(--secondary-red);
+}
+
+.tertiary-red {
+  background-color: var(--tertiary-red);
+}
+
+.primary-gray {
+  background-color: var(--primary-gray);
+}
+
+.secondary-gray {
+  background-color: var(--secondary-gray);
+}
+
+.tertiary-gray {
+  background-color: var(--tertiary-gray);
+}
+
+
 
 .flex {
   display: flex;
@@ -70,3 +146,9 @@ h2 {
   font-size: var(--fs-600);
   font-family: var(--ff-secondary);
 }
+
+
+
+
+
+

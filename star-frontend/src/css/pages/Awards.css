@@ -1,0 +1,17 @@
+#awards * {
+    --height: 200px;
+}
+
+#awards .title-container {
+    width: 100%;
+    height: var(--height);
+
+    text-align: center;
+    line-height: var(--height);
+}
+
+#awards .title-container * {
+    font-size: var(--fs-900);
+    text-decoration: underline;
+    text-decoration-color: var(--primary-red);
+}

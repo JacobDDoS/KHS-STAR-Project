@@ -6,6 +6,7 @@ import Home from '../src/Pages/Home';
 import ClubInfo from './Pages/ClubInfo';
 import FcclaLeadership from './Pages/FcclaLeadership';
 import Membership from './Pages/Membership';
+import AwardsPage from './Pages/AwardsPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/FCCLA-info" element={<ClubInfo/>} />
         <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
+        <Route path="/awards" element={<AwardsPage/>}/>
       </Routes>
     </Router>
   );
