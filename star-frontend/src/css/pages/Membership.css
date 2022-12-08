@@ -1,0 +1,30 @@
+.membership-center-div{
+    margin: auto;
+    padding: 0.2em;
+}
+
+.main-title{
+    margin: auto;
+    font-size: 90px;
+}
+
+.membership-secondary-div{
+    margin: auto;
+    margin-top: 1em;
+    background-color: var(--primary-gray);
+    color: white;
+    border-radius: 0.5em;
+    border: 0.5em;
+    border-style: outset;
+    border-color: var(--primary-red);
+    width: min(95%, 75em);
+    padding: 0.5em;
+}
+
+.membership-secondary-header{
+    display: flex;
+}
+
+.membership-content{
+    display: flex;
+}

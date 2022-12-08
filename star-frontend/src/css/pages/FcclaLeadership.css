@@ -1,0 +1,42 @@
+.leadership-page-title {
+    margin: auto;
+    font-size: 90px;
+}
+
+.leadership-content-div{
+    padding: 0.5em;
+    margin: auto;
+    margin-top: 1em;
+    width: min(90%, 75em);
+    background-color: var(--secondary-gray);
+    border-radius: 0.5em;
+}
+
+.leadership-img{
+    margin: 0.5em;
+    display: flex;
+    float: left;
+    border-radius: 00.5em;
+    width: 200px;
+}
+
+.leadership-name{
+    display: flex;
+    color: var(--primary-red);
+    font-family: var(--ff-primary);
+    text-decoration: underline;
+}
+
+.leadership-title{
+    display: flex;
+    font-family: var(--ff-secondary);
+}
+
+.leadership-goals{
+    font-family: var(--ff-tertiary);
+}
+
+.leadership-date{
+    font-family: var(--ff-secondary);
+    margin-left: 0em;
+}

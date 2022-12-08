@@ -1,0 +1,29 @@
+.trivia-center-div{
+    margin: auto;
+    width: min(100%, 60em);
+    padding: 1em;
+}
+
+.trivia-content-div {
+    margin: auto;
+    width: min(95%, 85em);
+    margin-bottom: 3em;
+    padding: 1.5em;
+}
+
+.trivia-image {
+    margin: auto;
+    aspect-ratio: 7/5;
+    border-radius: 0.5em;
+}
+
+.trivia-header {
+    font-family: var(--ff-primary);
+    padding: 0.125em;
+    background-color: var(--secondary-gray);
+    border-radius: 0.5em;
+}
+
+.trivia-body-text {
+    font-family: var(--ff-tertiary);
+}
