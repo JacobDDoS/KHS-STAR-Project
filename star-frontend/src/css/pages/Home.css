@@ -1,0 +1,124 @@
+div{
+    text-align: center;
+}
+
+.home-main-title{
+    font-family: var(--ff-primary);
+    margin:auto;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    font-size: 90px;
+    width: 80%;
+    border-radius: 0.05em;
+    padding: 0.5em;
+}
+
+.display-case{
+    margin: auto;
+}
+
+.display-img{
+    border-radius: 1em;
+    width: 70%;
+    aspect-ratio: 8/5;
+    width: min(600px, 70%);
+    
+}
+
+.subtitle{
+    font-size: 30px;
+    font-family: var(--ff-tertiary);
+    margin-bottom: 0.5em;
+}
+
+.center-div{
+    width: 100%;
+    align-content: center;
+}
+
+#abt-fccla-title{
+    background-color: var(--tertiary-red);
+    width: min(60em, 90%);
+    aspect-ratio: 15/1;
+    margin: auto;
+    margin-bottom: 0.5em;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    
+}
+
+#abt-k-fccla{
+    color: white;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1%;
+    font-size: 50px;
+}
+
+
+#abt-fccla-text{
+    width: min(60em, 90%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+}
+
+.question-div{
+    color: var(--tertiary-red);
+    float: left;
+    width: 75%;
+    margin: auto;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.question {
+    background-color: var(--tertiary-gray);
+    border-radius: 00.5em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.answer-div{
+    float: right;
+    width: 75%;
+    margin: auto;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    text-align: right;
+    padding-right: 2%;
+
+}
+
+.answer{
+    background-color: var(--tertiary-gray);
+    border-radius: 00.5em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.creed-div{
+    width: min(90%, 50em);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: min(5em,10%);
+    background-color: white;
+    align-self: center;
+    padding: 1em;
+    padding-top: 10%;
+}
+
+.creed{
+    margin: auto;
+    display: flex;
+    float: right;
+    font-size: 40px;
+    font-family: var(--ff-secondary);
+    color: var(--secondary-red);
+}
