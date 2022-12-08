@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../css/components/navbar.css';
+import '../css/Components/navbar.css';
 import MyImage from '../media/photos/FCCLA_logo.png'
 const Navbar = () => {
   const [isMenueOpen, setIsMenueOpen] = useState(false);
