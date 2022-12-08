@@ -1,7 +1,7 @@
 import './css/App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Design from './Pages/Design';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 import Home from '../src/Pages/Home';
 import ClubInfo from './Pages/ClubInfo';
 import FcclaLeadership from './Pages/FcclaLeadership';

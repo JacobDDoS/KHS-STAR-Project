@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     background-color: var(--primary-red);
     height: 5em;
     z-index: 1;
@@ -7,24 +7,22 @@
     width: 100%;
 }
 
-.logo{
+.logo {
     position: relative;
     scale: 70%;
     z-index: 2;
 }
 
 i {
-    position: relative;
+    position: absolute;
     scale: 250%;
     color: white;
     z-index: 2;
-    float: right;
-    float: top;
-    margin-right: 1.5em;
     padding-bottom: 4em;
+    right: 2em;
 }
 
-.pageDisplay{
+.pageDisplay {
     position: fixed;
     right: -100%;
     background-color: var(--primary-gray);
@@ -35,23 +33,26 @@ i {
     opacity: 95%;
 }
 
-.pageDisplayOpen{
+.pageDisplayOpen {
     transform: translateX(-65%);
 }
 
-.fa-xmark{
-    margin-right: 2em;
-    margin-top: 1em;
+.fa-xmark {
+    position: absolute;
     scale: 300%;
+    color: white;
+    z-index: 2;
+    padding-bottom: 3em;
+    right: 2em;
 }
 
-.link-div{
+.link-div {
     width: 100%;
     height: 100%;
     padding: 1em;
 }
 
-.link{
+.link {
     margin-top: 5%;
     display: flex;
     font-size: 75px;
