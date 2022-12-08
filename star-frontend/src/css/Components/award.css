@@ -4,6 +4,8 @@
 
 .award-container {
     display: grid;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .award-data-container {
