@@ -1,6 +1,6 @@
 package com.khs.STAR.repository;
 
-import com.khs.STAR.entity.Source;
+import com.khs.STAR.entity.Bibliography.Source;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

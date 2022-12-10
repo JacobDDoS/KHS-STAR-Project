@@ -1,6 +1,6 @@
 package com.khs.STAR.security;
 
-import com.khs.STAR.entity.User;
+import com.khs.STAR.entity.Auth.User;
 import com.khs.STAR.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,7 +10,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 
 import static com.khs.STAR.security.UserRoles.ADMIN;
 

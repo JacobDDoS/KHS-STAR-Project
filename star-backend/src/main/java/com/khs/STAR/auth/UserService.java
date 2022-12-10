@@ -1,6 +1,6 @@
 package com.khs.STAR.auth;
 
-import com.khs.STAR.entity.User;
+import com.khs.STAR.entity.Auth.User;
 import com.khs.STAR.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

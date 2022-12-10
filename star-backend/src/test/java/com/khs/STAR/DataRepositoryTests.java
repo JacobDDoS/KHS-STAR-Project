@@ -1,12 +1,15 @@
 package com.khs.STAR;
 
-import com.khs.STAR.entity.*;
+import com.khs.STAR.entity.Awards.Award;
+import com.khs.STAR.entity.Bibliography.Source;
+import com.khs.STAR.entity.Chapter_Activities.ChapterActivity;
+import com.khs.STAR.entity.Chapter_Officers.Officer;
+import com.khs.STAR.entity.Contacts.ContactInfo;
+import com.khs.STAR.entity.Planned_Program_of_Work.ProgramOfWork;
+import com.khs.STAR.entity.Sponsors.Supporter;
 import com.khs.STAR.repository.*;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
