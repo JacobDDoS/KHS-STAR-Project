@@ -10,10 +10,10 @@ const Navbar = () => {
                 <img className='logo' src={MyImage} alt ="logo"/> 
             <div className={`pageDisplay ${isMenueOpen ? "pageDisplayOpen" : ""}`}>
                 <div className='link-div'>
-                    <a className='link' href='http://localhost:3000/'>Home</a>
-                    <a className='link' href='http://localhost:3000/FCCLA-info'>FCCLA info</a>
-                    <a className='link' href='http://localhost:3000/FCCLA-leadership'>Chapter Leaders</a>
-                    <a className='link' href='http://localhost:3000/FCCLA-membership'>Membership</a>
+                    <a className='link' href='/'>Home</a>
+                    <a className='link' href='/FCCLA-info'>FCCLA info</a>
+                    <a className='link' href='/FCCLA-leadership'>Chapter Leaders</a>
+                    <a className='link' href='/FCCLA-membership'>Membership</a>
                 </div>
             </div>
         </div>
