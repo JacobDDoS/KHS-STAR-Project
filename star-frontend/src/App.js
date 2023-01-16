@@ -7,6 +7,8 @@ import ClubInfo from './Pages/ClubInfo';
 import FcclaLeadership from './Pages/FcclaLeadership';
 import Membership from './Pages/Membership';
 import AwardsPage from './Pages/AwardsPage';
+import AdminOverview from './Pages/AdminOverview';
+import Login from './Components/Admin/Login';
 
 function App() {
   return (
@@ -14,11 +16,13 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/design" element={<Design/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/FCCLA-info" element={<ClubInfo/>} />
         <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
+        <Route path="/admin" element={<AdminOverview/>}/>
       </Routes>
     </Router>
   );
