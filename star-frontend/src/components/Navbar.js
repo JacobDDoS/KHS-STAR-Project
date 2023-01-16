@@ -14,6 +14,7 @@ const Navbar = () => {
                     <a className='link' href='/FCCLA-info'>FCCLA info</a>
                     <a className='link' href='/FCCLA-leadership'>Chapter Leaders</a>
                     <a className='link' href='/FCCLA-membership'>Membership</a>
+                    <a className='link' href='/awards'>Awards</a>
                 </div>
             </div>
         </div>

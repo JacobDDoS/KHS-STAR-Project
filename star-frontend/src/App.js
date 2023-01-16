@@ -7,6 +7,8 @@ import ClubInfo from './Pages/ClubInfo';
 import FcclaLeadership from './Pages/FcclaLeadership';
 import Membership from './Pages/Membership';
 import AwardsPage from './Pages/AwardsPage';
+import Recruitment from './Pages/Recruitment';
+import Committee from './Pages/Committee';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
+        <Route path="/FCCLA-recruitment" element={<Recruitment/>}/>
+        <Route path="/FCCLA-Committee" element={<Committee/>}/>
       </Routes>
     </Router>
   );
