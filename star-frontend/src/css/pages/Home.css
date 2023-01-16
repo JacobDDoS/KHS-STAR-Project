@@ -72,6 +72,7 @@ div{
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
     text-align: left;
+    font-size: 30px;
     padding-left: 2%;
 }
 
@@ -81,6 +82,7 @@ div{
     padding: 0.1em;
     padding-left: 0.5em;
     padding-right: 0.5em;
+    margin: 7px;
 }
 
 .answer-div{
@@ -90,6 +92,7 @@ div{
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     text-align: right;
+    font-size: 25px;
     padding-right: 2%;
 
 }
