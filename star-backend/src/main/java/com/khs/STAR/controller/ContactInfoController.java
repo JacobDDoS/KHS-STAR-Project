@@ -24,7 +24,7 @@ public class ContactInfoController {
         return contactInfo;
     }
 
-    @GetMapping("contactInfo")
+    @GetMapping("ContactInfo")
     public List<ContactInfo> getAllContactInfo() {
         return contactInfoRepository.findAll();
     }

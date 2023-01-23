@@ -25,7 +25,7 @@ public class AwardController {
         return award;
     }
 
-    @GetMapping("awards")
+    @GetMapping("Award")
     public List<Award> getAllAwards() {
         return awardRepository.findAll();
     }
