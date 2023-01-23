@@ -22,7 +22,6 @@ export const AdminComponentData = () => {
     })
   }, [])
 
-  console.log(data)
   return (
     <div>
         <h2>{component} Data</h2>

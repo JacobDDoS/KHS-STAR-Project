@@ -11,6 +11,8 @@ import AdminOverview from './Pages/Admin/AdminOverview';
 import Login from './Components/Admin/Login';
 import Test from './Components/Admin/Test';
 import { AdminComponentData } from './Pages/Admin/AdminComponentData';
+import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualComponentData';
+import { AdminAddData } from './Pages/Admin/AdminAddData';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/admin/test" element={<Test/>} />
         <Route path="/admin" element={<AdminOverview/>} />
         <Route path="/admin/:component" element={<AdminComponentData/>} />
+        <Route path="/admin/edit/:component/:id" element={<AdminIndividualComponentData/>} />
+        <Route path="/admin/add/:component" element={<AdminAddData/>} />
 
         <Route path="/design" element={<Design/>} />
         <Route path="/" element={<Home/>} />
