@@ -75,8 +75,10 @@ public class SecurityConfiguration {
                 .anyRequest()
                 .authenticated()
                 .and()
+//                .requiresChannel().anyRequest().requiresSecure()
+//                .and()
                 .formLogin()
-                .defaultSuccessUrl("/homepage/pictureShowcase")
+                .defaultSuccessUrl("https://www.kearneyfcclaserver.com/Award")
                 .failureUrl("/failure")
                 .and()
                 .logout()
@@ -100,7 +102,8 @@ public class SecurityConfiguration {
 
     private CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        List<String> allowOrigins = Arrays.asList("http://localhost:3000");
+        List<String> allowOrigins = Arrays.asList("https://kearneyfccla.com", "http://localhost:3000");
+//        List<String> allowOrigins = Arrays.asList("https://kearneyfccla.com");
         configuration.setAllowedOrigins(allowOrigins);
         configuration.setAllowedMethods(singletonList("*"));
         configuration.setAllowedHeaders(singletonList("*"));
