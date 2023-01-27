@@ -24,7 +24,7 @@ public class ChapterActivitiesController {
         return chapterActivity;
     }
 
-    @GetMapping("chapterActivities")
+    @GetMapping("ChapterActivity")
     public List<ChapterActivity> getAllChapterActivity() {
         return chapterActivityRepository.findAll();
     }

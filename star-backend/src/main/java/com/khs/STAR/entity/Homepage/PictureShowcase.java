@@ -28,5 +28,5 @@ public class PictureShowcase {
     private Long id;
 
     @Column(columnDefinition = "TEXT")
-    private String URLToPictures;
+    private String URLToPicture;
 }

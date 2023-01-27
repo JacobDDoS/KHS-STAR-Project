@@ -24,7 +24,7 @@ public class PPWController {
         return programOfWork;
     }
 
-    @GetMapping("programOfWork")
+    @GetMapping("ProgramOfWork")
     public ProgramOfWork getProgramOfWork() {
         return programOfWorkRepository.findTopByOrderByIdDesc();
     }

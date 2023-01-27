@@ -7,6 +7,12 @@ import ClubInfo from './Pages/ClubInfo';
 import FcclaLeadership from './Pages/FcclaLeadership';
 import Membership from './Pages/Membership';
 import AwardsPage from './Pages/AwardsPage';
+import AdminOverview from './Pages/Admin/AdminOverview';
+import Login from './Components/Admin/Login';
+import Test from './Components/Admin/Test';
+import { AdminComponentData } from './Pages/Admin/AdminComponentData';
+import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualComponentData';
+import { AdminAddData } from './Pages/Admin/AdminAddData';
 import Recruitment from './Pages/Recruitment';
 import Committee from './Pages/Committee';
 
@@ -15,6 +21,14 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
+        {/* Admin Pages */}
+        <Route path="/login" element={<Login/>} />
+        <Route path="/admin/test" element={<Test/>} />
+        <Route path="/admin" element={<AdminOverview/>} />
+        <Route path="/admin/:component" element={<AdminComponentData/>} />
+        <Route path="/admin/edit/:component/:id" element={<AdminIndividualComponentData/>} />
+        <Route path="/admin/add/:component" element={<AdminAddData/>} />
+
         <Route path="/design" element={<Design/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/FCCLA-info" element={<ClubInfo/>} />
