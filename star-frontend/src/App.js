@@ -13,6 +13,8 @@ import Test from './Components/Admin/Test';
 import { AdminComponentData } from './Pages/Admin/AdminComponentData';
 import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualComponentData';
 import { AdminAddData } from './Pages/Admin/AdminAddData';
+import Recruitment from './Pages/Recruitment';
+import Committee from './Pages/Committee';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
+        <Route path="/FCCLA-recruitment" element={<Recruitment/>}/>
+        <Route path="/FCCLA-Committee" element={<Committee/>}/>
       </Routes>
     </Router>
   );
