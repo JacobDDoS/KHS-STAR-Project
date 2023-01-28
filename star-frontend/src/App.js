@@ -18,8 +18,8 @@ import Test from './Components/Admin/Test';
 import { AdminComponentData } from './Pages/Admin/AdminComponentData';
 import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualComponentData';
 import { AdminAddData } from './Pages/Admin/AdminAddData';
-import Recruitment from './Pages/Recruitment';
-import Committee from './Pages/Committee';
+import Design from './Pages/DesignPage';
+import Membership from './Pages/MembershipPage';
 
 function App() {
   return (
@@ -35,9 +35,9 @@ function App() {
         <Route path="/admin/add/:component" element={<AdminAddData/>} />
 
         <Route path="/design" element={<Design/>} />
-        <Route path="/" element={<Home/>} />
-        <Route path="/FCCLA-info" element={<ClubInfo/>} />
-        <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/FCCLA-info" element={<ClubInfoPage/>} />
+        {/* <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/> */}
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
         <Route path="/FCCLA-recruitment" element={<RecruitmentPage/>}/>
