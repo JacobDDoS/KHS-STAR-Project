@@ -1,0 +1,43 @@
+.pow-month-container {
+    margin: 200px;
+}
+
+.pow-month-name {
+    color: var(--primary-red);
+    font-size: var(--fs-800);
+}
+
+.pow-event-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.pow-circle-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--secondary-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.pow-event-date {
+    text-decoration: none;
+    color: white;
+}
+
+.pow-description-container {
+    width: 450px;
+}
+
+.pow-event-description {
+    text-decoration: none;
+}

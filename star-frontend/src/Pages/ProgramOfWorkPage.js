@@ -3,11 +3,20 @@ import ProgramOfWork from '../Components/ProgramOfWork/ProgramOfWork'
 import '../css/pages/ProgramOfWork.css'
 import { getProgramOfWork } from '../data/getProgramOfWork'
 
+import "../css/pages/ProgramOfWork.css"
+
 const ProgramOfWorkPage = () => {
     const[ProgramOfWorkData, setProgramOfWork] = useState([])
 
     useEffect(() =>{
       getProgramOfWork().then((data) => {
+        console.log(data);
+        data.sort((a, b) => {
+          const aDate = new Date(a.date);
+          const bDate = new Date(b.date);
+          return aDate.getTime() - bDate.getTime()
+        })
+        console.log(data);
         setProgramOfWork(data)
       })
     },[])

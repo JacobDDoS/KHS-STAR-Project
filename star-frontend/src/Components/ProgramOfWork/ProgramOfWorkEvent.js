@@ -4,47 +4,15 @@ import { numberToMonth } from '../../helpers/numberToMonth'
 
 const ProgramOfWorkEvent = ({data}) => {
   const date = new Date(data.date);
-  console.log("PoW: " + data.description);
 
   return (
-    <div className='center-div'>
-      
-      {/* Jan */}
-
-      
-      {/* Feb */}
-
-
-      {/* March */}
-
-
-      {/* April */}
-
-
-      {/* May */}
-
-
-      {/* June */}
-
-
-      {/* July */}
-
-
-      {/* Aug */}
-
-
-      {/* Sept */}
-
-
-      {/* Oct */}
-
-
-      {/* Nov */}
-
-
-      {/* Dec */}
-
-      
+    <div className='center-div pow-event-container'>
+      <div className='pow-circle-container'>
+        <h2 className='pow-event-date'>{date.getDate()}</h2>
+      </div>
+      <div className='pow-description-container'>
+        <h2 className='pow-event-description'>{data.description}</h2>
+      </div>
     </div>
   )
 }
