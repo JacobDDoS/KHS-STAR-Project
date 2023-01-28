@@ -1,18 +1,18 @@
 import React from 'react'
-import ProgramOfWorkEvent from '../ProgramOfWork/ProgramOfWorkEvent'
+import ProgramOfWorkEvent from './ProgramOfWorkEvent'
 import '../../css/pages/ProgramOfWork.css'
 
 const ProgramOfWork = ({data}) => {
   return (
-    <div>ProgramOfWork
-    {
+    <div>
+      {
         data.map((programOfWork, idx) => {
-            return <> 
+          return <div key={programOfWork.id}> 
             <ProgramOfWorkEvent data={programOfWork} key={programOfWork.id}/>
-            {idx !== programOfWork.length-1 ? <div key={idx} className='line'></div> : null}
-            </>
+            {idx !== data.length-1 ? <div key={idx} className='line'></div> : null}
+          </div>
         })
-    }
+      }
     </div>
   )
 }

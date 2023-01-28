@@ -1,46 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import ProgramOfWork from '../Components/ProgramOfWork/ProgramOfWork';
-import { getProgramOfWork } from '../data/getProgramOfWork';
+import React, {useEffect, useState} from 'react'
+import ProgramOfWork from '../Components/ProgramOfWork/ProgramOfWork'
 import '../css/pages/ProgramOfWork.css'
-
-const preprocessing = (ProgramOfWorkEvents) => {
-    function custom_sort(a, b) {
-        return new Date(a.date).getTime() - new Date(b.date).getTime();
-    }
-    
-    let DataSortedByMonth = []
-
-        for(let i = 0; i < 12; i++){
-            DataSortedByMonth.push([]);
-        }
-        
-        for(let i = 0; i < ProgramOfWorkEvents; i++){
-            let MonthOfEvent = new Date(ProgramOfWorkEvents[i].date).getMonth();
-            DataSortedByMonth[MonthOfEvent-1].push(ProgramOfWorkEvents[i]);
-        }
-        
-    DataSortedByMonth.sort(custom_sort);
-    console.log(DataSortedByMonth);
-    return DataSortedByMonth;
-}
+import { getProgramOfWork } from '../data/getProgramOfWork'
 
 const ProgramOfWorkPage = () => {
-    const [ProgramOfWorkdata, setProgramOfWorkdata] = useState([]);
+    const[ProgramOfWorkData, setProgramOfWork] = useState([])
 
-    useEffect(()=>{
-        //Get and set ProgramOfWork data
-        getProgramOfWork().then((data) => {
-            setProgramOfWorkdata(data);
-        });
-    }, [])
-
-    return (<>
-        <div className='title-container'>
-            <h1>Awards/Recognition</h1>
+    useEffect(() =>{
+      getProgramOfWork().then((data) => {
+        setProgramOfWork(data)
+      })
+    },[])
+  return (<>
+        <div className='center-div'>
+            <h1 className='main-title'>Program Of Work</h1>
         </div>
-        <ProgramOfWork data={ProgramOfWorkdata}/>
+        <ProgramOfWork data={ProgramOfWorkData}/>
         </>
-    )
+  )
 }
 
-export default ProgramOfWork
+export default ProgramOfWorkPage 

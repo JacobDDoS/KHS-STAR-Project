@@ -7,13 +7,9 @@ const CommitteeEvent = ({data}) => {
 
   let endDate = ""
 
-  console.log(data.endTime)
-
   if(data.endTime != ""){
   endDate = new Date(data.endTime)
   }
-
-  console.log(endDate)
 
   return (
     <div className='recruitment-center-div'>

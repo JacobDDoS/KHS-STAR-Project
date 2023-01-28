@@ -6,10 +6,44 @@ const ProgramOfWorkEvent = ({data}) => {
   const date = new Date(data.date);
 
   return (
-    <div>ProgramOfWorkEvent
+    <div className='center-div'>
       
-      {/*month*/}
-      <div className='programOfWork-'></div>
+      {/* Jan */}
+
+      
+      {/* Feb */}
+
+
+      {/* March */}
+
+
+      {/* April */}
+
+
+      {/* May */}
+
+
+      {/* June */}
+
+
+      {/* July */}
+
+
+      {/* Aug */}
+
+
+      {/* Sept */}
+
+
+      {/* Oct */}
+
+
+      {/* Nov */}
+
+
+      {/* Dec */}
+
+      
     </div>
   )
 }

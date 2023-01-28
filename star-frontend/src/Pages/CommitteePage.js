@@ -13,7 +13,7 @@ const CommitteePage = () => {
     },[])
   return (<>
         <div className='recruitment-center-div'>
-            <h1 className='main-title'>Recruitment</h1>
+            <h1 className='main-title'>Committees</h1>
         </div>
         <Committee data={CommiteeData}/>
         </>
