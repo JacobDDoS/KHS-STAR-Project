@@ -28,5 +28,6 @@ public class ProgramOfWork {
     )
     private Long id;
 
-    private String linkToPDFOfChapterProgramOfWork;
+    private String description;
+    private Date date;
 }

@@ -13,17 +13,33 @@ import ProgramOfWorkPage from './Pages/ProgramOfWorkPage';
 import MilestonesPage from './Pages/MileStonePage';
 import TeamsPage from './Pages/TeamsPage';
 import SponsorPage from './Pages/SponsorPage';
+import AdminOverview from './Pages/Admin/AdminOverview';
+import Login from './Components/Admin/Login';
+import Test from './Components/Admin/Test';
+import { AdminComponentData } from './Pages/Admin/AdminComponentData';
+import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualComponentData';
+import { AdminAddData } from './Pages/Admin/AdminAddData';
+import Design from './Pages/DesignPage';
+import Membership from './Pages/MembershipPage';
 
 function App() {
   return (
     <Router>
       <Navbar/>
       <Routes>
-        <Route path="/design" element={<DesignPage/>} />
+        {/* Admin Pages */}
+        <Route path="/login" element={<Login/>} />
+        <Route path="/admin/test" element={<Test/>} />
+        <Route path="/admin" element={<AdminOverview/>} />
+        <Route path="/admin/:component" element={<AdminComponentData/>} />
+        <Route path="/admin/edit/:component/:id" element={<AdminIndividualComponentData/>} />
+        <Route path="/admin/add/:component" element={<AdminAddData/>} />
+
+        <Route path="/design" element={<Design/>} />
         <Route path="/" element={<HomePage/>} />
         <Route path="/FCCLA-info" element={<ClubInfoPage/>} />
         <Route path="/FCCLA-leadership" element = {<LeadershipPage/>}/>
-        <Route path="/FCCLA-membership" element= {<MembershipPage/>}/>
+        <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
         <Route path="/FCCLA-recruitment" element={<RecruitmentPage/>}/>
         <Route path="/FCCLA-committee" element={<CommitteePage/>}/>

@@ -3,12 +3,13 @@ import '../../css/pages/Home.css'
 
 const HomeEvent = ({data, ImageData}) => {
     const [IndexOfImage, setIndexOfImage] = useState(0)
+    console.log(ImageData[0])
 
   return ( 
     <div className='center-div'>
 
             {/* Image Cycle */}
-            {ImageData.length !== 0 ? <img className='display-img' src={ImageData[IndexOfImage].image} onClick={()=>setIndexOfImage((IndexOfImage+1)%ImageData.length)}/> : null }
+            {ImageData.length !== 0 ? <img className='display-img' src={ImageData[IndexOfImage].urltoPicture} onClick={()=>setIndexOfImage((IndexOfImage+1)%ImageData.length)}/> : null }
             
             {/* About FCCLA */}
             <div id='abt-fccla-title'>

@@ -30,27 +30,27 @@ public class MembershipController {
 
 // GET endpoints
 
-    @GetMapping("committee")
+    @GetMapping("Committee")
     public List<Committee> getAllCommittees() {
         return committeeRepository.findAll();
     }
 
-    @GetMapping("membershipInfo")
-    public List<MembershipInfo> getAllMembershipInfo() {
-        return membershipInfoRepository.findAll();
+    @GetMapping("MembershipInfo")
+    public MembershipInfo getAllMembershipInfo() {
+        return membershipInfoRepository.findAll().get(0);
     }
 
-    @GetMapping("milestone")
+    @GetMapping("Milestone")
     public List<Milestone> getAllMilestones() {
         return milestoneRepository.findAll();
     }
 
-    @GetMapping("recruitmentActivities")
+    @GetMapping("RecruitmentActivity")
     public List<RecruitmentActivities> getAllRecruitmentActivities() {
         return recruitmentActivitiesRepository.findAll();
     }
 
-    @GetMapping("team")
+    @GetMapping("Team")
     public List<Team> getAllTeams() {
         return teamRepository.findAll();
     }

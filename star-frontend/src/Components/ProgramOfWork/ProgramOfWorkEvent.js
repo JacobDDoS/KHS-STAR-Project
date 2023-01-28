@@ -4,6 +4,7 @@ import { numberToMonth } from '../../helpers/numberToMonth'
 
 const ProgramOfWorkEvent = ({data}) => {
   const date = new Date(data.date);
+  console.log("PoW: " + data.description);
 
   return (
     <div className='center-div'>

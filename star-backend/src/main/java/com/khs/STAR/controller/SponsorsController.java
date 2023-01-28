@@ -24,7 +24,7 @@ public class SponsorsController {
         return supporter;
     }
 
-    @GetMapping("supporter")
+    @GetMapping("Supporter")
     public List<Supporter> getAllSupporters() {
         return supporterRepository.findAll();
     }

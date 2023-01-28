@@ -15,10 +15,10 @@ const MilestonesEvent = ({data}) => {
             <h3 className='milestone-content'>Year: {numberToMonth} {date.getFullYear()}</h3>
 
             {/* Member Count */}
-            <h3 className='milestone-content'>Members: {data.memberCount}</h3>
+            <h3 className='milestone-content'>Members: {data.numberOfMembers}</h3>
 
             {/* Event Count */}
-            <h3 className='milestone-content'>Competitive Events: {data.eventCount}</h3>
+            <h3 className='milestone-content'>Competitive Events: {data.numberOfCompetitiveEvents}</h3>
 
         </div>
     </div>

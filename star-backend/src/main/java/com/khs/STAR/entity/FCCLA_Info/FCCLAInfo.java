@@ -30,6 +30,8 @@ public class FCCLAInfo {
     private String dosAndDonts;
     private String nationalPrograms;
     private String careerPathways;
+
+    @Column(length=1000)
     private String creed;
     private String motto;
     private String tagLine;
