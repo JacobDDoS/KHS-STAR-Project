@@ -1,12 +1,17 @@
 import './css/App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Design from './Pages/Design';
+import DesignPage from './Pages/DesignPage';
 import Navbar from './Components/Navbar';
-import Home from '../src/Pages/Home';
-import ClubInfo from './Pages/ClubInfo';
-import FcclaLeadership from './Pages/FcclaLeadership';
-import Membership from './Pages/Membership';
+import HomePage from '../src/Pages/HomePage';
+import ClubInfoPage from './Pages/ClubInfoPage';
+import LeadershipPage from './Pages/LeadershipPage';
+import MembershipPage from './Pages/MembershipPage';
 import AwardsPage from './Pages/AwardsPage';
+import RecruitmentPage from './Pages/RecruitmentPage';
+import CommitteePage from './Pages/CommitteePage';
+import ProgramOfWorkPage from './Pages/ProgramOfWorkPage';
+import MilestonesPage from './Pages/MileStonePage';
+import TeamsPage from './Pages/TeamsPage';
 import AdminOverview from './Pages/Admin/AdminOverview';
 import Login from './Components/Admin/Login';
 import Test from './Components/Admin/Test';
@@ -35,8 +40,11 @@ function App() {
         <Route path="/FCCLA-leadership" element = {<FcclaLeadership/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/awards" element={<AwardsPage/>}/>
-        <Route path="/FCCLA-recruitment" element={<Recruitment/>}/>
-        <Route path="/FCCLA-Committee" element={<Committee/>}/>
+        <Route path="/FCCLA-recruitment" element={<RecruitmentPage/>}/>
+        <Route path="/FCCLA-committee" element={<CommitteePage/>}/>
+        <Route path="/FCCLA-programOfWork" element={<ProgramOfWorkPage/>}/>
+        <Route path="/FCCLA-milestones" element={<MilestonesPage/>}/>
+        <Route path="/FCCLA-teams" element={<TeamsPage/>}/>
       </Routes>
     </Router>
   );
