@@ -11,6 +11,7 @@ const AwardsPage = () => {
         //Get and set awards data
         getAwards().then((data) => {
             setAwardsData(data);
+            console.log(data);
         });
     }, [])
 

@@ -13,16 +13,19 @@ const LeadershipEvent = ({data}) => {
         <div className='leadership-content-div'>
 
             {/* Image */}
-            <img className='leadership-img'src = {data.image} alt = {data.name}/>
+            <img className='leadership-img'src = {data.photoURL} alt = {data.officerName}/>
 
             {/* Name */}
-            <h1 className='leadership-name'>{data.name}</h1>
+            <h1 className='leadership-name'>{data.officerName}</h1>
 
             {/* Title */}
-            <h3 className='leadership-title'>{data.title}</h3>
+            <h3 className='leadership-title'>{data.officerPosition}</h3>
+
+            {/* Responsibilities */}
+            <h3>{data.chapterResponsibilities}</h3>
 
             {/* goals */}
-            <h3 className='leadership-goals'>{data.goals}</h3>
+            <h3 className='leadership-goals'>{data.chapterServiceOrCareerGoals}</h3>
 
             {/* Start time */}
             <h3 className='leadership-date'>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>

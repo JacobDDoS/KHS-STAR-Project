@@ -5,7 +5,7 @@ export const handleRequest = async (method, path, payload = "") => {
                     'credentials': 'include',
                     headers: new Headers({
                         'Accept': 'application/json',
-                        'Access-Control-Allow-Origin':'http://localhost:3000/',
+                        // 'Access-Control-Allow-Origin':'http://localhost:3000/',
                         'Content-Type': 'application/json',
                     }),
                  }
