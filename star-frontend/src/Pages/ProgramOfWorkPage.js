@@ -3,6 +3,8 @@ import ProgramOfWork from '../Components/ProgramOfWork/ProgramOfWork'
 import '../css/pages/ProgramOfWork.css'
 import { getProgramOfWork } from '../data/getProgramOfWork'
 
+import "../css/pages/ProgramOfWork.css"
+
 const ProgramOfWorkPage = () => {
     const[ProgramOfWorkData, setProgramOfWork] = useState([])
 

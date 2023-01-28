@@ -25,8 +25,8 @@ const ProgramOfWork = ({data}) => {
         dataSortedByMonth.map((dataForThatMonth, idx) => {
           if (dataForThatMonth.length > 0) {
             const dataDate = new Date(dataForThatMonth[0].date);
-            return <div key={idx}>
-              <h2>{numberToMonth(dataDate.getMonth())}</h2>
+            return <div key={idx} className='pow-month-container'>
+              <h2 className='pow-month-name'>{numberToMonth(dataDate.getMonth())}</h2>
               {
                 dataForThatMonth.map((oneEvent) => {
                   return <ProgramOfWorkEvent data={oneEvent} key={oneEvent.id} />

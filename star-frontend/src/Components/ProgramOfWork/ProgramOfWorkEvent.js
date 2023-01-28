@@ -6,8 +6,13 @@ const ProgramOfWorkEvent = ({data}) => {
   const date = new Date(data.date);
 
   return (
-    <div className='center-div'>
-      <h3>{data.description} - {date.getDate()}</h3>
+    <div className='center-div pow-event-container'>
+      <div className='pow-circle-container'>
+        <h2 className='pow-event-date'>{date.getDate()}</h2>
+      </div>
+      <div className='pow-description-container'>
+        <h2 className='pow-event-description'>{data.description}</h2>
+      </div>
     </div>
   )
 }
