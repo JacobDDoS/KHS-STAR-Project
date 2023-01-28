@@ -36,8 +36,8 @@ public class MembershipController {
     }
 
     @GetMapping("MembershipInfo")
-    public List<MembershipInfo> getAllMembershipInfo() {
-        return membershipInfoRepository.findAll();
+    public MembershipInfo getAllMembershipInfo() {
+        return membershipInfoRepository.findAll().get(0);
     }
 
     @GetMapping("Milestone")

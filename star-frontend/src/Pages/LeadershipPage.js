@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import '../css/pages/Leadership.css'
 import Leadership from '../Components/Leadership/Leadership'
-import { getLeadership } from '../data/getLeadership'
+import { getLeadership, getOfficers } from '../data/getOfficers'
 
 const LeadershipPage = () => {
     const[LeadershipData, setLeadershipData] = useState([])
 
     useEffect(() => {
-        getLeadership().then((data) => {
+      getOfficers().then((data) => {
             setLeadershipData(data)
         })
     }, [])

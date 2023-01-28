@@ -12,13 +12,13 @@ const MilestonesEvent = ({data}) => {
         <div className='milestone-div'>
 
             {/* Year */}
-            <h3 className='milestone-content'>{numberToMonth(date.getUTCMonth())} {date.getFullYear()}</h3>
+            <h3 className='milestone-content'>Year: {data.year}</h3>
 
             {/* Member Count */}
-            <h3 className='milestone-content'>Members: {data.memberCount}</h3>
+            <h3 className='milestone-content'>Members: {data.numberOfMembers}</h3>
 
             {/* Event Count */}
-            <h3 className='milestone-content'>Competitive Events: {data.eventCount}</h3>
+            <h3 className='milestone-content'>Competitive Events: {data.numberOfCompetitiveEvents}</h3>
 
         </div>
     </div>

@@ -12,13 +12,13 @@ const RecruitmentEvent = ({data}) => {
         <div className='recruitment-center-div'>
 
             {/* Recruitment Activity(Event) */}
-            <h2 className='recruitment-secondary-header'>{data.event}</h2>
+            <h2 className='recruitment-secondary-header'>{data.title}</h2>
 
             {/* Description */}
             <h3 className='recruitment-content'>{data.description}</h3>
 
             {/* Image */}
-            <img className='recruitment-content' src ={data.image} alt = {data.event}></img>
+            <img className='recruitment-content' src ={data.photoURL} alt = {data.title}></img>
 
             {/* Time */}
             <h3 className='recruitment-content'>{numberToMonth(date.getUTCMonth())} {date.getUTCDate()} {date.getFullYear()}</h3>

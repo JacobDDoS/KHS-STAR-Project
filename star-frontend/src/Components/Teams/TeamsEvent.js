@@ -10,7 +10,7 @@ const TeamsEvent = ({data}) => {
         <div className='teams-secondary-div'>
 
             {/* Captians */}
-            <h2 className='teams-content'>Captains: {data.captain1} , {data.captain2}</h2>
+            <h2 className='teams-content'>Captains: {data.teamCaptains}</h2>
 
             {/* Members */}
             <h3 className='teams-content'>Members: {data.members}</h3>

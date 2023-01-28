@@ -70,7 +70,6 @@ public class SecurityConfiguration {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/api/**").hasRole(ADMIN.name())
-                .antMatchers("/PictureShowcase").hasRole(ADMIN.name())
                 .antMatchers("/*").permitAll()
                 .anyRequest()
                 .authenticated()

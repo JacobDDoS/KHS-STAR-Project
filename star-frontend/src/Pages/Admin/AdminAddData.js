@@ -16,12 +16,14 @@ export const AdminAddData = () => {
     navigate(path);
   }
   useEffect(()=>{
+    console.log("ran")
     
     Object.entries(exampleData).forEach((entry) => {
-        if (!Date.parse(entry[1])) {
+        if (!(Date.parse(entry[1]) && entry[1].includes(":"))) {
             exampleData[entry[0]] = "";
         }
     })
+    console.log(exampleData);
     setData(exampleData);
   }, [])
 

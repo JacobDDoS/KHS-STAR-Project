@@ -33,7 +33,7 @@ const CommitteeEvent = ({data}) => {
             <h3 className='Committee-content'>{data.description}</h3>
 
             {/* Image */}
-            <img className='Committee-content' src={data.image} alt={data.committeeName}/>
+            <img className='Committee-content' src={data.photoURL} alt={data.name}/>
 
             {/* Accomplishments */}
             <h3 className='Committee-content'>{data.accomplishments}</h3>
