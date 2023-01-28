@@ -18,13 +18,13 @@ public class ChapterOfficersController {
         this.officerRepository = officerRepository;
     }
 
-    @PostMapping("api/add/ChapterOfficers")
+    @PostMapping("api/add/Officer")
     public Officer addOfficer(@RequestBody Officer officer) {
         officerRepository.save(officer);
         return officer;
     }
 
-    @GetMapping("officers")
+    @GetMapping("Officer")
     public List<Officer> getAllOfficers() {
         return officerRepository.findAll();
     }

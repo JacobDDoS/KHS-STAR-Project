@@ -24,7 +24,7 @@ public class SourceController {
         return source;
     }
 
-    @GetMapping("sources")
+    @GetMapping("Source")
     public List<Source> getAllSources() {
         return sourceRepository.findAll();
     }

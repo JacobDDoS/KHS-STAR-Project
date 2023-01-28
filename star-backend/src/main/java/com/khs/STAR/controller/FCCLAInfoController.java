@@ -24,7 +24,7 @@ public class FCCLAInfoController {
         return fcclaInfo;
     }
 
-    @GetMapping("fcclaInfo")
+    @GetMapping("FCCLAInfo")
     public FCCLAInfo getAllContactInfo() {
         return fcclaInfoRepository.findTopByOrderByIdDesc();
     }

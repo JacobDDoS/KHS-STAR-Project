@@ -18,30 +18,30 @@ public class HomepageController {
         this.pictureShowcaseRepository = pictureShowcaseRepository;
     }
 
-    @PostMapping("api/add/Homepage/PictureShowcase")
+    @PostMapping("api/add/PictureShowcase")
     public PictureShowcase addPictureShowcase(@RequestBody PictureShowcase pictureShowcase) {
         pictureShowcaseRepository.save(pictureShowcase);
         return pictureShowcase;
     }
 
-    @GetMapping("homepage/pictureShowcase")
-    public PictureShowcase getPictureShowcase() {
-        return pictureShowcaseRepository.findTopByOrderByIdDesc();
+    @GetMapping("PictureShowcase")
+    public List<PictureShowcase> getPictureShowcase() {
+        return pictureShowcaseRepository.findAll();
     }
 
 
-    @PutMapping(value = "api/update/Homepage/PictureShowcase/{pictureShowcaseId}",
+    @PutMapping(value = "api/update/PictureShowcase/{pictureShowcaseId}",
             consumes = {MediaType.APPLICATION_JSON_VALUE}
     )
     public String updatePictureShowcase(@PathVariable Long pictureShowcaseId, @RequestBody PictureShowcase pictureShowcaseDetails) {
         PictureShowcase pictureShowcaseToUpdate = pictureShowcaseRepository.getReferenceById(pictureShowcaseId);
 
-        pictureShowcaseToUpdate.setURLToPictures(pictureShowcaseDetails.getURLToPictures());
+        pictureShowcaseToUpdate.setURLToPicture(pictureShowcaseDetails.getURLToPicture());
         pictureShowcaseRepository.save(pictureShowcaseToUpdate);
         return "updated homepage - picture Showcase #" + pictureShowcaseId;
     }
 
-    @DeleteMapping("api/delete/Homepage/PictureShowcase/{pictureShowcaseId}")
+    @DeleteMapping("api/delete/PictureShowcase/{pictureShowcaseId}")
     public String deletePictureShowcase(@PathVariable Long pictureShowcaseId) {
         pictureShowcaseRepository.deleteById(pictureShowcaseId);
 
