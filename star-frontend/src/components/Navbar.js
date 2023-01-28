@@ -12,9 +12,13 @@ const Navbar = () => {
                 <div className='link-div'>
                     <a className='link' href='/'>Home</a>
                     <a className='link' href='/FCCLA-info'>FCCLA info</a>
-                    <a className='link' href='/FCCLA-leadership'>Chapter Leaders</a>
-                    <a className='link' href='/FCCLA-membership'>Membership</a>
+                    <a className='link' href='/FCCLA-leadership'>Leadership</a>
                     <a className='link' href='/awards'>Awards</a>
+                    <a className='link' href='/FCCLA-recruitment'>Recruitment</a>
+                    <a className='link' href='/FCCLA-milestones'>Milestones</a>
+                    <a className='link' href='/FCCLA-committee'>Committees</a>
+                    <a className='link' href='/FCCLA-teams'>Teams</a>
+                    <a className='link' href='/FCCLA-sponsors'>Sponsors</a>
                 </div>
             </div>
         </div>

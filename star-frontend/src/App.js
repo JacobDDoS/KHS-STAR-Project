@@ -12,6 +12,7 @@ import CommitteePage from './Pages/CommitteePage';
 import ProgramOfWorkPage from './Pages/ProgramOfWorkPage';
 import MilestonesPage from './Pages/MileStonePage';
 import TeamsPage from './Pages/TeamsPage';
+import SponsorPage from './Pages/SponsorPage';
 import AdminOverview from './Pages/Admin/AdminOverview';
 import Login from './Components/Admin/Login';
 import Test from './Components/Admin/Test';
@@ -45,6 +46,7 @@ function App() {
         <Route path="/FCCLA-programOfWork" element={<ProgramOfWorkPage/>}/>
         <Route path="/FCCLA-milestones" element={<MilestonesPage/>}/>
         <Route path="/FCCLA-teams" element={<TeamsPage/>}/>
+        <Route path="/FCCLA-sponsors" element={<SponsorPage/>}/>
       </Routes>
     </Router>
   );
