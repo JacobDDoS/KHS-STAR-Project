@@ -25,8 +25,8 @@ public class PPWController {
     }
 
     @GetMapping("ProgramOfWork")
-    public ProgramOfWork getProgramOfWork() {
-        return programOfWorkRepository.findTopByOrderByIdDesc();
+    public List<ProgramOfWork> getProgramOfWork() {
+        return programOfWorkRepository.findAll();
     }
 
 
@@ -36,7 +36,8 @@ public class PPWController {
     public String updateProgramOfWork(@PathVariable Long programOfWorkId, @RequestBody ProgramOfWork programOfWorkDetails) {
         ProgramOfWork programOfWorkToUpdate = programOfWorkRepository.getReferenceById(programOfWorkId);
 
-        programOfWorkToUpdate.setLinkToPDFOfChapterProgramOfWork(programOfWorkDetails.getLinkToPDFOfChapterProgramOfWork());
+        programOfWorkToUpdate.setDescription(programOfWorkDetails.getDescription());
+        programOfWorkToUpdate.setDate(programOfWorkDetails.getDate());
         programOfWorkRepository.save(programOfWorkToUpdate);
         return "updated Program Of Work #" + programOfWorkId;
     }

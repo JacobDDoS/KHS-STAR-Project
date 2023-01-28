@@ -80,7 +80,8 @@ export const allDataComponentsExamples = [
         "photoURL": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F34%2F2018%2F05%2F12170411%2Fcat-kitten-138468381.jpg&q=60"
     },
     {
-        "linkToPDFOfChapterProgramOfWork": "https://www.catcare4life.org/app/uploads/2021/07/Kitten-booklet.pdf"
+        "description": "lorem ipsum",
+        "date": "2022-11-26T19:14:01.090+00:00"
     },
     {
         "source": "https://en.wikipedia.org/wiki/Family,_Career_and_Community_Leaders_of_America"
