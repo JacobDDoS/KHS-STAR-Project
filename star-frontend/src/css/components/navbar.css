@@ -24,17 +24,18 @@ i {
 
 .pageDisplay {
     position: fixed;
-    right: -100%;
+    right: min(100%,-36em);
     background-color: var(--primary-gray);
     height: 100%;
-    width: 100%;
+    width: 30em;
     transition: transform 800ms cubic-bezier(.15, .82, .49, .93);
     border-top-left-radius: 0.75em;
     opacity: 95%;
+    z-index: 10;
 }
 
 .pageDisplayOpen {
-    transform: translateX(-65%);
+    transform: translateX(-35em);
 }
 
 .fa-xmark {
@@ -53,8 +54,9 @@ i {
 }
 
 .link {
-    margin-top: 5%;
+    margin-top: 0.1em;
     display: flex;
     font-size: 75px;
     color: white;
+    height: 1.2em;
 }

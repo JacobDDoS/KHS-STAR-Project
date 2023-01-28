@@ -12,7 +12,7 @@ const MilestonesEvent = ({data}) => {
         <div className='milestone-div'>
 
             {/* Year */}
-            <h3 className='milestone-content'>{numberToMonth(date.getUTCMonth())} {date.getFullYear()}</h3>
+            <h3 className='milestone-content'>Year: {numberToMonth} {date.getFullYear()}</h3>
 
             {/* Member Count */}
             <h3 className='milestone-content'>Members: {data.memberCount}</h3>
