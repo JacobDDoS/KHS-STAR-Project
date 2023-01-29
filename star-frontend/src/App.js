@@ -21,6 +21,8 @@ import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualCompo
 import { AdminAddData } from './Pages/Admin/AdminAddData';
 import Design from './Pages/DesignPage';
 import Membership from './Pages/MembershipPage';
+import ChapterActivities from './Components/ChapterActivities';
+import ChapterActivitiesPage from './Pages/ChapterActivitiesPage';
 
 function App() {
   return (
@@ -47,6 +49,7 @@ function App() {
         <Route path="/FCCLA-milestones" element={<MilestonesPage/>}/>
         <Route path="/FCCLA-teams" element={<TeamsPage/>}/>
         <Route path="/FCCLA-sponsors" element={<SponsorPage/>}/>
+        <Route path="/FCCLA-chapterActivities" element={<ChapterActivitiesPage/>}/>
       </Routes>
     </Router>
   );
