@@ -6,24 +6,19 @@ const RecruitmentEvent = ({data}) => {
     const date = new Date(data.date)
 
   return (
-    <div>
+    <div className='recruitment-container'>
         
-        {/* Recruitment Activity(BIG) */}
-        <div className='recruitment-center-div'>
-
-            {/* Recruitment Activity(Event) */}
-            <h2 className='recruitment-secondary-header'>{data.title}</h2>
-
-            {/* Description */}
-            <h3 className='recruitment-content'>{data.description}</h3>
-
-            {/* Image */}
-            <img className='recruitment-content' src ={data.photoURL} alt = {data.title}></img>
-
-            {/* Time */}
-            <h3 className='recruitment-content'>{numberToMonth(date.getUTCMonth())} {date.getUTCDate()} {date.getFullYear()}</h3>
-
+        {/* Image Container */}
+        <div className='recruitment-photo'>
+          <img src={data.photoURL} alt={data.title} />
         </div>
+
+
+        <div className='recruitment-content-container'>
+          <h2 className="recruitment-title">{data.title}</h2>
+          <p>{data.description}</p>
+        </div>
+
     </div>
   )
 }
