@@ -9,7 +9,6 @@ const Recruitment = ({data}) => {
         data.map((Recruitment, idx) => {
           return <div key={idx} className='line'> 
             <RecruitmentEvent data={Recruitment} key={Recruitment.id}/>
-            {idx !== data.length-1 ? <div key={idx} className='line'></div> : null}
           </div>
         })
       }

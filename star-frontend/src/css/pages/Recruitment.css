@@ -1,0 +1,34 @@
+.recruitment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.recruitment-photo {
+    width: 50%;
+}
+
+.recruitment-photo img {
+    width: 90%;
+}
+
+.recruitment-content-container {
+    text-align: center;
+    width: 50%;
+}
+
+.recruitment-title {
+    color: var(--secondary-red);
+}
+
+
+/* Tablet  */
+@media (min-width: 35em) {
+    .recruitment-container {
+        flex-direction: row;
+        width: 70%;
+    }
+}
