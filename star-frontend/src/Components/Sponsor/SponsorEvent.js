@@ -13,13 +13,13 @@ const SponsorEvent = ({data}) => {
             <h2 className='sponsor-header'>{data.companyName}</h2>
 
             {/* Image */}
-            <img src={data.companyLogoURL} alt={data.companyName} className='sponsor-img'/>
+            <img src={data.logoURL} alt={data.companyName} className='sponsor-img'/>
 
             {/* Description */}
             <h3 className='sponsor-content'>{data.description}</h3>
 
             {/* link */}
-            <a className='sponsor-content' href={data.companyLink}>{data.companyName}</a>
+            <a className='sponsor-content' href={data.link}>{data.companyName}</a>
 
         </div>
     </div>
