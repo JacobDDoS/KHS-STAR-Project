@@ -11,19 +11,22 @@
     padding: 1.5em;
 }
 
-.trivia-image {
-    margin: auto;
-    aspect-ratio: 7/5;
-    border-radius: 0.5em;
+.ClubInfo-sub-div{
+    /* background-color: var(--tertiary-gray); */
+    margin-top: 10%;
+    padding-bottom: 0.5em;
 }
 
-.trivia-header {
-    font-family: var(--ff-primary);
-    padding: 0.125em;
-    background-color: var(--secondary-gray);
-    border-radius: 0.5em;
+.ClubInfo-header {
+    color: var(--primary-red);
 }
 
-.trivia-body-text {
-    font-family: var(--ff-tertiary);
+.ClubInfo-content {
+    margin-right: 0em;
+    font-size: 1.5em;
+}
+
+.ClubInfo-img {
+    width: min(75%, 40em);
+    border-radius: 0.25em;
 }

@@ -1,7 +1,10 @@
 .milestone-div{
-    
+    margin: auto;
+    padding-top: 2em;
+    border-bottom: 3px ridge red;
+    width: min(75%, 60em);
 }
 
 .milestone-content{
-    
+    font-size: 1.75em;
 }

@@ -1,3 +1,23 @@
-.Committee-content {
-    white-space: pre-line;
+.Committee-div{
+    padding-top: 2em;
+    margin: auto;
+    width: min(75%, 60em);
+    border-bottom: 2px solid red;
 }
+
+.Committee-secondary-div{
+    margin-bottom: 1em;
+}
+
+.Committee-content{
+    margin: 0.2em;
+    font-size: 1.5em;
+}
+
+.Committee-secondary-header{
+    font-size: 2.5em;
+    color: var(--primary-red);
+}
+
+.Committee-img{
+    width: 25em;

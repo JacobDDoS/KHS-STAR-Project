@@ -4,12 +4,30 @@ import { numberToMonth } from '../../helpers/numberToMonth'
 
 const CommitteeEvent = ({data}) => {
 
+  console.log(data)
   return (
-    <div className='recruitment-center-div'>
+    <div className='center-div'>
         
         {/* Commitee(BIG) */}
-        <div className='Committee-secondary-div'>
+        <div className='Committee-div'>
 
+            {/* Image */}
+            <div className='Committee-secondary-div'>
+              <img className='Committee-img' src={data.photoURL} alt={data.name}/>
+            </div>
+          
+            {/* CommitteeName & run time*/}
+            <div className='Committee-secondary-div'>
+              <p className='Committee-secondary-header'>{data.name} </p>
+              <p className='Committee-tertiary-header'>{data.runTime}</p>
+            </div>
+
+            {/* Members */}
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Members</h2>
+              <p className='Committee-content'>{data.members}</p>
+            </div>
+            
             {/* CommitteeName */}
             <h2 className='Committee-secondary-header'>{data.name} </h2>
 
@@ -20,13 +38,16 @@ const CommitteeEvent = ({data}) => {
             <h3>{data.runTime}</h3>
 
             {/* Description */}
-            <h3 className='Committee-content'>{data.description}</h3>
-
-            {/* Image */}
-            <img className='Committee-content' src={data.photoURL} alt={data.name}/>
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Description</h2>
+              <p className='Committee-content'>{data.description}</p>
+            </div>
 
             {/* Accomplishments */}
-            <h3 className='Committee-content'>{data.accomplishments}</h3>
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Accomplishments</h2>
+              <p className='Committee-content'>{data.accomplishments}</p>
+            </div>
 
         </div>
     </div>
