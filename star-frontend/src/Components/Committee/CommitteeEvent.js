@@ -28,14 +28,6 @@ const CommitteeEvent = ({data}) => {
               <p className='Committee-content'>{data.members}</p>
             </div>
             
-            {/* CommitteeName */}
-            <h2 className='Committee-secondary-header'>{data.name} </h2>
-
-            {/* Members */}
-            <h3 className='Committee-content'>{data.members}</h3>
-
-            {/* runtime */}
-            <h3>{data.runTime}</h3>
 
             {/* Description */}
             <div className='Committee-secondary-div'>

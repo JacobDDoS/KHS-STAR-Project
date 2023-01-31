@@ -1,0 +1,36 @@
+.dropdown-container {
+    height: auto;
+    margin-top: 50px;
+}
+
+.dropdown-subtitle-container {
+    border: var(--tertiary-red) 2px solid;
+    /* background-color: var(--secondary-red); */
+    height: 70px;
+    width: min(600px, 90%);
+    margin: auto;
+    cursor: pointer;
+}
+
+.dropdown-subtitle {
+    font-size: var(--fs-500);
+    height: 20px;
+    line-height: 70px;
+    /* color: white; */
+    color: var(--secondary-red);
+}
+
+.dropdown-content-container {
+    width: 100%;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    font-size: var(--fs-400);
+    font-weight: bold;
+    white-space: pre-wrap;
+}
+
+.invisible {
+    display: none;
+}

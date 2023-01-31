@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
 import '../css/Components/navbar.css';
 import MyImage from '../media/photos/FCCLA_logo.png'
 const Navbar = () => {
@@ -23,13 +24,22 @@ const Navbar = () => {
     ["/admin","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/////AAD/fX3/+/v/+Pj/7u7/6en/mJj/9PT/ior/39//8fH/Hx//lZX/7e3/nZ3/JSX/zMz/SEj/oqL/YWH/Wlr/rq7/4+P/x8f/09P/v7//eHj/GBj/iYn/TEz/PDz/qKj/2Nj/cnL/Ly//LS3/uLj/Q0P/u7v/Zmb/UlL/bW3/gYH/srL/kJD/Ghr/Nzfx+ZcCAAAJF0lEQVR4nO2dh5qyOhCGRYqIqGBDEAXsBfT+7+6grvtbiBoyY8Z9znsBykcgUzNUKuiommlYQbteS13LaGgq/j9+EtVIFruJrfwSRtuu6zVkXxcUhtvdKAXMq6n/F0Qm8Tos0nci2i2+XaPVLFy+f9jbVPY1CtHsPNd3xBlZsi+zNEn/tb4jy0D2lZakzX7/7om/0Xh4o7f15bQ12dfLTbLmEagoA7WiNfSWbn7LavovttCCVexm49G0Wm+nriH76t8gWfIKvOKwbbrUV9KbCAg8Ek192RqeYvQEBebM6oT3HpVrF2XSJ+sIqDUQgfmjOpQthUEwB1JIVSLES3hhmchWU4DahBOoKD2C203yvjP6DjXZeh55M5x4lz25DTWAFagoa9mK7gHbRy/YxFIAA2iB+SKSSuRo3BHFa5yFbFXXpPbrK+ZmRGgRtSmCQGVOyLNxIwyFSo2O2Ydyue+YkLGJFrC1/4XMY7qCddj+kRF5TDVQn/uaiS5b2xkP6yFVQk+2tjM+lkAyLyKCx3aBRgxlopj7Mz3Z4k4YDp5CR7a4E4ivoaKQSIEjvoaKQmIzhUkDM1jJVncEx+v+oS1b3RFMgUpVtrqcBqpCCuZiiKpwKVteThdVIQWDWEdVaMuWl4Pos+WEBEw+Wuh0xpStr1IRaU14AwIZRVSDT0Lh7M8rRIyd/lf4If7+U4q80xCwFqJ9Xs8JCeSEAXtMCqDgte1QFVLwvHFji0i2vJwVqsK+bHk5HqpCClkMFVUhibQ+qskn0Y+xxVRIos6NmvMmEOJXKgmiwJlscSdaiJ4pjfY9c4ynkERSH6Hx8h9EqtwJnr0gcrykhWcvaKyhvsVoTDwzlS3uBGpwQSDER/baBrLV5WiYAkk8phaqQgoRMKI1VGjkaVAdb0UhkGuLcRUS6L9s4ypsydaHvoYEjncv/rxC3G4TCgpxs4kUFOL6NBSqaxWsowgnKFh83HYTCl1fuNFTJlvdEdQuaBJpjBZizxCFpq98M83wFI5kizuDaPNpZKIqHlopv0/A7z6BtpuSqK0d8ZH2mj6J0xYncPaakMRhizM4J52rBOL7XzAWcUnC2l8QnvH1SBjLFnWLC65wRCDLdgO0xAOFwPCW5ACqkEBs/0BjBxcL2xQnYVUqansPJZCQJbxB5xzsyYTQyI87ujDPaY+Ot3ZPAuLbhBTKoixA4qgNiWY2BiBxFIWeUiYmQFuGTfkhBXlMJ1QC+2IAat5j2Rqeowrbi5DyPnNEOFKkcD79KcLFNlJxbxGiw+k6sgW8RrCMQTOouMEUOgi1JVGoeIErMMrUdmVf/TuI9H3XSXRbvsR/4wssxdBKID6hVtbs177hLTzSKFnaJ1SneIVf6gg7rbG6LyjVzkc6LnygxHN6+J5n9IjF398ey75mTrhbh0n0BvHQ4o32iTQlvI/K2Vm7IZsEZsKZz/i6JeRVOPuujfREyqVwSq9c+ArOAdFU5lpzoPPtpXSrTUwSLoHK+DsCw2s4cxkdilXtp3Dno77NWmjc9W6HdrXiHq3EbOHeN72JRqlcVPV7XkW/5On13uI7NLpZ6W5Te90MiD+rraDeE2tWmPVHcUI14+ZmmxnE7IHQWW4H1NxULalBN0Lb1aBFZC01I2kiTajpLTxdtkrVCzLYnsR7kQNfpitgDGsI31u7wxkNXEkbrFtbI09nvRBVB59fSG01Qh5cesO+n322OKwNNngzaRjMPvg9a735cXlnJh8JsdQW8hCFp2zQNx3VipEnI79iPUR1d7wYd2rwO4TVIZoXoA1wZwa/y2GMtK/6U4Au7kkdwkeYxAjLaNYAvLNo1dAaAYCTHm7BTUcCMVeg+3PnBwAPgw27jCZA/7Z99fFbcwdw9mQN2IhqAXyWqxfc/OQC4FG1A6hldMWvxm7eJ5l8iPM1XRDbqKXiNt5ZPN5tD+J7bTuAsqPZBnBCC/1JHeIrQ2th09jIAPY9Rq+TDrE/bwQlahDfqxqzaoMWxEEwsfq4CfGuOMy7rIKEKaHAKqogX3YIU9YaejDDa+3SxQCYW5yTFdtmF8qR35TN4sDNfNykj+MRvK5AP/gdu3Jx8RAw1g2nd/6HlkJGYmG3jEDgT8LPqtePqj+FTURGJXr84WcjzX9vtJqBJ1qn/K8ixmjZw/lthJ8woZQYqWygJCwCtJundHgNP8pVHH5+HCWdxbmIGsoSpj+/jjIcrMNnMRKMa4gu0RzO/ePbTmsYl5D+/jzKIvJNr8OoK0X/3McWxrzMPY9AlKmr18kxlOHDPIOzdIT/X14HORbGdspTmcKYlX/TBczZQfweKVPPIwg7gXObTRzCBRa/8LjfCN/DW9+GqRhfbuH5RhvC1wDu/x7BHtU5FMIPszzcbwND+DYcnoEa8IXs3n2uBsGv4VlD+J3u8R2BH7UoVeH8sdzngkfBUhV2HusWGvhYV6kKi474gtsLqQqDgj8BN0lSFRbV+cA/GyFT4aHwX6B7x3gUQtvDXeG/QE1ZvMBj8aF9muK4BvpF5FlD6P8uLrdDv4g8njdwCO4U90xAZxJ4oifg+JA1oAzY5vOMdU1g/5r1+EBUmK/gyXoD52mK7P0R4M998fQPAb8hrPYs2BIN37xFUFMVsursoJvphi+rD/p1nA6rttcC9GrWnLUnDaQL44ctq/tMB8ua2nXufgwL8LhPndVtYkL0fR1ZLkq0KgzhjFWXtclBVdLH5TpNV2A5W6YlVkH8345bduIE2Ndj2PUEAO+wI9JGawDlGdilS1HvcN4THcDfLj0B8Rp2W72QwrBTBZiUmdTFa6UhW6GAU3MYxTDnSlRX+BTsHl6hve26cMefzCQW1AisMFwvfODhC6oRCPmpO+Zuzh9c2KOVhXN4TU8FnBx7HfvGQ2mG/75Nmgbq4XV9sY0ckc7s/TzqnIk4hy+ETtTPSht2Lvz2qB+hfjz2Qdys0xu1PzpAueHGWbX3CZnhYTMdd4NExml81XMXcTbqH7B0zjbTLF4ME7kDQLSW5Q+DRS1/buEiWaezrceroW897Ezy0Botw7PcVdysrjuzkou6P2y2+aK5lmfopuxhH2xUVTvJzfUGadzOxrvqC3bNbjpMPKNlapqKJOw/UEy626me+jIAAAAASUVORK5CYII=","Admin Page"],
   ])
   
+  useEffect(()=>{
+    if (window.innerWidth >= 1700) {
+        setIsMenueOpen(true);
+      }
+  }, [])
+
   return (
     <div>
         <div className='navbar'>
+            <div style={{"width": "1em"}}>
                 <img className='logo' src={MyImage} alt ="logo"/> 
+            </div>
+            <h2>Kearney High</h2>
             <div className={`pageDisplay ${isMenueOpen ? "pageDisplayOpen" : ""}`}>
                 <div className='sidebar-top'>
-                    <i style={{"margin": "80px 29px 0px 0px"}} className='fa-solid fa-bars fa-xmark' onClick={() => setIsMenueOpen(!isMenueOpen)} />
+                    <i style={{"margin": "80px 29px 0px 0px"}} className='navbar-icon fa-solid fa-bars fa-xmark' onClick={() => setIsMenueOpen(!isMenueOpen)} />
                 </div>
                 <div className='link-div'>
                     {
@@ -43,7 +53,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        {!isMenueOpen ? <i className='fa-solid fa-bars' onClick={() => setIsMenueOpen(!isMenueOpen)} /> : null}
+        {!isMenueOpen ? <i className='fa-solid fa-bars navbar-icon' onClick={() => setIsMenueOpen(!isMenueOpen)} /> : null}
         {/* <i className={`fa-solid fa-bars ${isMenueOpen ? "fa-xmark" : ""}`} onClick={() => setIsMenueOpen(!isMenueOpen)}></i> */}
         {/* <i className='fa-solid fa-bars' onClick={() => setIsMenueOpen(!isMenueOpen)}></i>    */}
     </div>

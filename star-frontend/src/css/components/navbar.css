@@ -1,19 +1,29 @@
 .navbar {
     background-color: var(--primary-red);
     height: 5em;
+    width: 100%;
     z-index: 1;
     position: relative;
     display: flex;
     width: 100%;
 }
 
+.navbar > h2 {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: auto;
+}
+
 .logo {
     position: relative;
+    width: 8em;
     scale: 70%;
     z-index: 2;
 }
 
-i {
+.navbar-icon {
     position: absolute;
     scale: 250%;
     color: white;
