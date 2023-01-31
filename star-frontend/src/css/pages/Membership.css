@@ -1,43 +1,44 @@
-.membership-center-div{
+.membership-generalInfo-div{
+    display: grid;
+    padding-bottom: 5em;
+    border-bottom: 5px dotted red;
     margin: auto;
-    padding: 0.2em;
+    width: min(85%, 60em);
+}
+
+.membership-div{
+    margin: 1em;
 }
 
 .main-title{
-    margin: auto;
+    margin-bottom: 0.5em;
     font-size: 90px;
 }
 
-.teams-div{
-    margin: auto;
-    margin-top: 1em;
-    background-color: var(--tertiary-gray);
-    color: black;
-    border-radius: 0.5em;
-    border: 0.5em;
-    border-style: outset;
-    border-color: var(--primary-red);
-    width: min(95%, 75em);
-    padding: 0.5em;
-}
-
-.membership-secondary-div{
-    margin: auto;
-    margin-top: 1em;
-    background-color: var(--primary-gray);
-    color: white;
-    border-radius: 0.5em;
-    border: 0.5em;
-    border-style: outset;
-    border-color: var(--primary-red);
-    width: min(95%, 75em);
-    padding: 0.5em;
-}
-
-.membership-secondary-header{
-    display: flex;
-}
-
 .membership-content{
-    display: flex;
+    font-size: 2em;
+    font-weight: 100px;
+}
+
+.membership-header{
+    text-decoration: 4px underline red;
+    font-size: 2.5em;
+}
+
+/*        More about being a member          */
+
+.membership-reasons-div{
+    /* background-color: grey; */
+    margin-bottom: 2em;
+}
+
+.membership-subject-header{
+    margin-top: 2em;
+    font-size: 3em;
+}
+
+.membership-image{
+    margin-top: 0.25em;
+    width: min(80%, 35em);
+    border-radius: 0.5em;
 }

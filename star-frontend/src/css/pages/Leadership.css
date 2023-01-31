@@ -44,6 +44,23 @@
     padding-top: 0.75em;
 }
 
-.leadership-email{
-    
+
+.leadership-expectations-div{
+    margin: auto;
+    width: min(80%, 60em);
+}
+
+.leadership-expectaions-header{
+    font-size: 3.5em;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+.leadership-expecations{
+    font-family: var(--ff-secondary);
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    font-weight: 270;
+    border-bottom: 3px solid grey ;
 }

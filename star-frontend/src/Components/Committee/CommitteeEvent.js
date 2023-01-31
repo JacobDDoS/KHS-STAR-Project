@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../css/pages/Committee.css'
-import { numberToMonth } from '../../helpers/numberToMonth'
 
 const CommitteeEvent = ({data}) => {
 
