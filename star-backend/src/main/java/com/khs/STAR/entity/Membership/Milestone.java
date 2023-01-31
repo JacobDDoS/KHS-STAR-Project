@@ -33,4 +33,7 @@ public class Milestone {
 
     @Column(length = 5000)
     private String yearlyAccomplishments;
+
+    @Column(length = 2000)
+    private String highlightedMembers;
 }

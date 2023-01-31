@@ -1,0 +1,62 @@
+.chapterActivity-main-container {
+    width: 80%;
+    margin: auto;
+}
+
+.chapterActivity-image {
+    display: flex;
+    grid-area: image;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapterActivity-image img {
+    width: 70%;
+    margin-right: 40px;
+}
+
+.chapterActivity-text-container {
+    width: 90%;
+    grid-area: title-date;
+}
+
+.chapterActivity-text-container * {
+    text-align: left;
+}
+
+.chapterActivity-title {
+    font-size: var(--fs-700);
+    color: var(--primary-red)
+}
+
+.chapterActivity-date-container {
+    margin-top: 20px;
+    font-size: var(--fs-400)
+}
+
+.chapterActivity-description-container {
+    grid-area: description;
+    margin: auto;
+}
+
+.chapterActivity-description {
+    font-size: var(--fs-300);
+}
+
+/* Tablet  */
+@media (min-width: 35em) {
+    .chapterActivity-image {
+        justify-content: right;
+    }
+    .chapterActivity-main-container {
+        
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "image image title-date title-date"
+            "description description description description"
+        ;
+    }
+}

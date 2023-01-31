@@ -3,13 +3,6 @@ import '../../css/pages/Committee.css'
 import { numberToMonth } from '../../helpers/numberToMonth'
 
 const CommitteeEvent = ({data}) => {
-  const startDate = new Date(data.startTime)
-
-  let endDate = ""
-
-  if(data.endTime != ""){
-  endDate = new Date(data.endTime)
-  }
 
   console.log(data)
   return (
@@ -35,6 +28,15 @@ const CommitteeEvent = ({data}) => {
               <p className='Committee-content'>{data.members}</p>
             </div>
             
+            {/* CommitteeName */}
+            <h2 className='Committee-secondary-header'>{data.name} </h2>
+
+            {/* Members */}
+            <h3 className='Committee-content'>{data.members}</h3>
+
+            {/* runtime */}
+            <h3>{data.runTime}</h3>
+
             {/* Description */}
             <div className='Committee-secondary-div'>
               <h2 className='Committee-header'>Description</h2>

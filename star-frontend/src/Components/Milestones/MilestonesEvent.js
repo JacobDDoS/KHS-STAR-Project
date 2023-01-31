@@ -2,9 +2,9 @@ import React from 'react'
 import '../../css/pages/Milestones.css'
 
 const MilestonesEvent = ({data}) => {
-  console.log(data)
+
   return (
-    <div className='center-div'>
+    <div className='center-div' style={{"marginTop": "30px", "width": "100%"}}>
 
         {/* Mlestone */}
         <div className='milestone-div'>
@@ -21,6 +21,13 @@ const MilestonesEvent = ({data}) => {
             {/* Accomplishments */}
             <p className='milestone-content'>Yearly Accomplishments: {data.yearlyAccomplishments}</p>
 
+            <h3>Accomplishments: {data.yearlyAccomplishments} </h3>
+
+            {/* Highlighted Members */}
+            <h3>Highlighted/New Members: </h3>
+            <div style={{"width": "100%", "overflow": "auto"}}>
+              <p>{data.highlightedMembers}</p>
+            </div>
         </div>
     </div>
   )

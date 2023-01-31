@@ -130,6 +130,7 @@ public class MembershipController {
         milestoneToUpdate.setNumberOfMembers(milestone.getNumberOfMembers());
         milestoneToUpdate.setNumberOfCompetitiveEvents(milestone.getNumberOfCompetitiveEvents());
         milestoneToUpdate.setYearlyAccomplishments(milestone.getYearlyAccomplishments());
+        milestoneToUpdate.setHighlightedMembers(milestone.getHighlightedMembers());
 
         milestoneRepository.save(milestoneToUpdate);
         return "updated Milestone #" + milestoneId;
@@ -138,7 +139,7 @@ public class MembershipController {
     @PutMapping(value = "api/update/RecruitmentActivity/{recruitmentActivityId}",
             consumes = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public String updateMilestone(@PathVariable Long recruitmentActivityId, @RequestBody RecruitmentActivities recruitmentActivity) {
+    public String updateRecruitmentActivity(@PathVariable Long recruitmentActivityId, @RequestBody RecruitmentActivities recruitmentActivity) {
         RecruitmentActivities recruitmentActivityToUpdate = recruitmentActivitiesRepository.getReferenceById(recruitmentActivityId);
 
         recruitmentActivityToUpdate.setTitle(recruitmentActivity.getTitle());
@@ -152,7 +153,7 @@ public class MembershipController {
     @PutMapping(value = "api/update/Team/{teamId}",
             consumes = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public String updateMilestone(@PathVariable Long teamId, @RequestBody Team team) {
+    public String updateTeam(@PathVariable Long teamId, @RequestBody Team team) {
         Team teamToUpdate = teamRepository.getReferenceById(teamId);
 
         teamToUpdate.setTeamCaptains(team.getTeamCaptains());
