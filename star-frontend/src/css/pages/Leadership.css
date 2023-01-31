@@ -1,19 +1,23 @@
 .leadership-content-div{
-    padding: 0.5em;
+    padding: 1em;
     margin: auto;
-    margin-top: 1em;
-    width: min(90%, 75em);
-    background-color: var(--secondary-gray);
-    border-radius: 0.5em;
-    height: 300px;
+    width: min(90%, 50em);
+    border-bottom: 4px ridge red;
+    display: flex;
+}
+
+.leadership-tertiary-div{
+    float: right;
+    display: grid;
+    padding-right: min(100%, 0.1em);
 }
 
 .leadership-img{
-    margin: 0.5em;
+    margin: auto;
     display: flex;
     float: left;
     border-radius: 00.5em;
-    width: 200px;
+    width: min(45%, 25em);
 }
 
 .leadership-name{
@@ -27,6 +31,7 @@
     margin: auto;
     padding: 0.25em;
     font-family: var(--ff-secondary);
+    font-size: 1.75em;
 }
 
 .leadership-goals{
