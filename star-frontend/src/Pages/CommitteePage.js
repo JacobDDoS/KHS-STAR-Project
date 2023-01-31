@@ -8,6 +8,7 @@ const CommitteePage = () => {
 
     useEffect(() =>{
       getCommittee().then((data) => {
+        console.log(data);
         setCommitteeData(data)
       })
     },[])

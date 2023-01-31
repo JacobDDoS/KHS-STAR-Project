@@ -3,13 +3,6 @@ import '../../css/pages/Committee.css'
 import { numberToMonth } from '../../helpers/numberToMonth'
 
 const CommitteeEvent = ({data}) => {
-  const startDate = new Date(data.startTime)
-
-  let endDate = ""
-
-  if(data.endTime != ""){
-  endDate = new Date(data.endTime)
-  }
 
   return (
     <div className='recruitment-center-div'>
@@ -18,16 +11,13 @@ const CommitteeEvent = ({data}) => {
         <div className='Committee-secondary-div'>
 
             {/* CommitteeName */}
-            <h2 className='Committee-secondary-header'>{data.committeeName} </h2>
+            <h2 className='Committee-secondary-header'>{data.name} </h2>
 
             {/* Members */}
             <h3 className='Committee-content'>{data.members}</h3>
 
-            {/* startTime */}
-            <h3>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>
-
-            {/* endTime */}
-            {endDate ? <h3>{numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3> : ""}
+            {/* runtime */}
+            <h3>{data.runTime}</h3>
 
             {/* Description */}
             <h3 className='Committee-content'>{data.description}</h3>
