@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import Sponsor from '../Components/Sponsor/Sponsor'
 import '../css/pages/Sponsor.css'
-import { getSponsor } from '../data/getSponsor'
+import { getSupporters } from '../data/getSupporters'
 
 const SponsorPage = () => {
     const[SponsorData, setSponsorData] = useState([])
 
     useEffect(() =>{
-      getSponsor().then((data) => {
+      getSupporters().then((data) => {
         setSponsorData(data)
       })
     },[])

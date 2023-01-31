@@ -11,32 +11,41 @@ const CommitteeEvent = ({data}) => {
   endDate = new Date(data.endTime)
   }
 
+  console.log(data)
   return (
-    <div className='recruitment-center-div'>
+    <div className='center-div'>
         
         {/* Commitee(BIG) */}
-        <div className='Committee-secondary-div'>
-
-            {/* CommitteeName */}
-            <h2 className='Committee-secondary-header'>{data.committeeName} </h2>
-
-            {/* Members */}
-            <h3 className='Committee-content'>{data.members}</h3>
-
-            {/* startTime */}
-            <h3>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>
-
-            {/* endTime */}
-            {endDate ? <h3>{numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3> : ""}
-
-            {/* Description */}
-            <h3 className='Committee-content'>{data.description}</h3>
+        <div className='Committee-div'>
 
             {/* Image */}
-            <img className='Committee-content' src={data.photoURL} alt={data.name}/>
+            <div className='Committee-secondary-div'>
+              <img className='Committee-img' src={data.photoURL} alt={data.name}/>
+            </div>
+          
+            {/* CommitteeName & run time*/}
+            <div className='Committee-secondary-div'>
+              <p className='Committee-secondary-header'>{data.name} </p>
+              <p className='Committee-tertiary-header'>{data.runTime}</p>
+            </div>
+
+            {/* Members */}
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Members</h2>
+              <p className='Committee-content'>{data.members}</p>
+            </div>
+            
+            {/* Description */}
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Description</h2>
+              <p className='Committee-content'>{data.description}</p>
+            </div>
 
             {/* Accomplishments */}
-            <h3 className='Committee-content'>{data.accomplishments}</h3>
+            <div className='Committee-secondary-div'>
+              <h2 className='Committee-header'>Accomplishments</h2>
+              <p className='Committee-content'>{data.accomplishments}</p>
+            </div>
 
         </div>
     </div>

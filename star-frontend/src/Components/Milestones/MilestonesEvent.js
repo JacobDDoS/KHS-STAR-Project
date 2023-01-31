@@ -1,10 +1,8 @@
 import React from 'react'
 import '../../css/pages/Milestones.css'
-import { numberToMonth } from '../../helpers/numberToMonth'
 
 const MilestonesEvent = ({data}) => {
-  const date = new Date(data.year)
-
+  console.log(data)
   return (
     <div className='center-div'>
 
@@ -12,13 +10,16 @@ const MilestonesEvent = ({data}) => {
         <div className='milestone-div'>
 
             {/* Year */}
-            <h3 className='milestone-content'>Year: {numberToMonth} {date.getFullYear()}</h3>
+            <p className='milestone-content'>Year: {data.year}</p>
 
             {/* Member Count */}
-            <h3 className='milestone-content'>Members: {data.numberOfMembers}</h3>
+            <p className='milestone-content'>Members: {data.numberOfMembers}</p>
 
             {/* Event Count */}
-            <h3 className='milestone-content'>Competitive Events: {data.numberOfCompetitiveEvents}</h3>
+            <p className='milestone-content'>Competitive Events: {data.numberOfCompetitiveEvents}</p>
+
+            {/* Accomplishments */}
+            <p className='milestone-content'>Yearly Accomplishments: {data.yearlyAccomplishments}</p>
 
         </div>
     </div>

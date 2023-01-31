@@ -1,7 +1,28 @@
 .teams-secondary-div{
+    margin-bottom: 2em;
+    /* background-color: lightblue; */
+    display: inline-grid;
+}
 
+.teams-tertiary-div{
+    /* background-color: grey; */
+    border-bottom-style: ridge;
+    border-width: 0.25em;
+    border-color: var(--primary-red);
+    padding-bottom: 0.25em;
+    width: 30em;
+    height: 8em;
+}
+
+.teams-captains{
+    font-size: 2.5em;
+}
+
+.teams-header{
+    margin-top: 0.25em;
+    font-size: 3em;
 }
 
 .teams-content{
-    
+    font-size: 1.5em;
 }

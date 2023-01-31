@@ -11,9 +11,9 @@ const ClubInfoPage = () => {
             setClubInfoData(data)
         })
     }, [])
-    
+
   return (<>
-        <div className='trivia-center-div'>
+        <div className='center-div'>
             <h1 className='main-title'>FCCLA info</h1>
         </div>
         <ClubInfo data={ClubInfoData}/>
