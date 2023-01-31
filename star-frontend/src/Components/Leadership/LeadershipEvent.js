@@ -7,36 +7,39 @@ const LeadershipEvent = ({data}) => {
     const endDate = new Date(data.endTime)
 
   return (
-    <div>
+    <div className='center-div'>
         
         {/* Leader */}
         <div className='leadership-content-div'>
 
             {/* Image */}
-            <img className='leadership-img'src = {data.photoURL} alt = {data.officerName}/>
+              <div className='leadership-tertiary-div'>
+                <img className='leadership-img'src = {data.photoURL} alt = {data.officerName}/>
 
-            {/* Name */}
-            <h1 className='leadership-name'>{data.officerName}</h1>
+                {/* Name */}
+                <h1 className='leadership-name'>{data.officerName}</h1>
+              
+                {/* Email */}
+                <p className='leadership-email'>{data.email}</p>
 
-            {/* Title */}
-            <h3 className='leadership-title'>{data.officerPosition}</h3>
+                {/* Title */}
+                <p className='leadership-title'>{data.officerPosition}</p>
 
-            {/* Responsibilities */}
-            <h3>{data.chapterResponsibilities}</h3>
+                {/* Responsibilities */}
+                <h3>{data.chapterResponsibilities}</h3>
 
-            {/* goals */}
-            <h3 className='leadership-goals'>{data.chapterServiceOrCareerGoals}</h3>
+                {/* goals */}
+                <h3 className='leadership-goals'>{data.chapterServiceOrCareerGoals}</h3>
 
-            {/* Start time */}
-            <h3 className='leadership-date'>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>
+                {/* Start time */}
+                <h3 className='leadership-date'>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>
 
-            {/* End time */}
-            <h3 className='leadership-date'>{numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3>
-
-            {/* Email */}
-            <h3 className='leadership-email'>{data.email}</h3>
+                {/* End time */}
+                <h3 className='leadership-date'>{numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3>
+              </div>
 
         </div>
+
     </div>
   )
 }
