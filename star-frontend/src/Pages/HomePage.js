@@ -23,14 +23,17 @@ const HomePage = () => {
     getHomeImages().then((ImageData) => {
       setHomeImageData(ImageData)
     })
-
     getProgramOfWork().then((data)=> {
       setProgramOfWorkData(data);
     })
-
     window.addEventListener("resize", handleResize, false);
-
+    setInterval(() => {
+      setIndexOfImage((oldIndex)=> {
+        return oldIndex+1;
+      })
+    }, 2000);
   }, [])
+
 
   const handleResize = () => {
     if (window.innerWidth >= 1700) {
@@ -44,7 +47,7 @@ const HomePage = () => {
         {/* Only show if width at least 1700  */}
         { window.innerWidth >= 1700 ? 
         <div className='left-sidebar'>
-          <ProgramOfWork data={programOfWorkData}/>
+          <ProgramOfWorkPage/>
         </div>
         : null}      
         <div className='center-div'>
@@ -54,7 +57,7 @@ const HomePage = () => {
               <div className='center-div'>
 
                 {/* Image Cycle */}
-                {homeImageData.length !== 0 ? <img className='display-img' src={homeImageData[indexOfImage].urltoPicture} onClick={()=>setIndexOfImage((indexOfImage+1)%homeImageData.length)}/> : null }
+                {homeImageData.length !== 0 ? <img className='display-img' src={homeImageData[indexOfImage%homeImageData.length].urltoPicture}/> : null }
 
                 <div>
                   <div className='fccla-question-subtitle'>

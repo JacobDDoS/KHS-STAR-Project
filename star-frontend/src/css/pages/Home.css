@@ -27,11 +27,17 @@ div{
 .left-sidebar {
     position: absolute;
     float: left;
+    top: 940px;
     width: 400px;
+}
+
+.left-sidebar h2 {
+    text-align: left;
 }
 
 .left-sidebar .pow-month-name {
     font-size: var(--fs-600);
+    text-align: center;
 }
 
 .left-sidebar .pow-month-container {
@@ -40,6 +46,14 @@ div{
 
 .left-sidebar .pow-circle-container {
     height: 66px;
+}
+
+.left-sidebar .pow-event-description {
+    font-size: var(--fs-400);
+}
+
+.left-sidebar .main-title {
+    font-size: var(--fs-700);
 }
 
 .subtitle{
