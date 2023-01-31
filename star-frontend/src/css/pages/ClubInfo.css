@@ -7,14 +7,15 @@
 .trivia-content-div {
     margin: auto;
     width: min(95%, 85em);
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
     padding: 1.5em;
 }
 
 .ClubInfo-sub-div{
     /* background-color: var(--tertiary-gray); */
-    margin-top: 10%;
+    margin-top: 5%;
     padding-bottom: 0.5em;
+    border-bottom: 5px dotted red;
 }
 
 .ClubInfo-header {

@@ -32,10 +32,7 @@ const LeadershipEvent = ({data}) => {
                 <h3 className='leadership-goals'>{data.chapterServiceOrCareerGoals}</h3>
 
                 {/* Start time */}
-                <h3 className='leadership-date'>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()}</h3>
-
-                {/* End time */}
-                <h3 className='leadership-date'>{numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3>
+                <h3 className='leadership-date'>{numberToMonth(startDate.getUTCMonth())} {startDate.getUTCDate()} {startDate.getFullYear()} - {numberToMonth(endDate.getUTCMonth())} {endDate.getUTCDate()} {endDate.getFullYear()}</h3>
               </div>
 
         </div>

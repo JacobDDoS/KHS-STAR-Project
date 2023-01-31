@@ -9,7 +9,6 @@ const Leadership = ({data}) => {
         data.map((Leadership, idx) => {
           return <div key={idx} className='line'> 
             <LeadershipEvent data={Leadership} key={Leadership.id}/>
-            {idx !== data.length-1 ? <div key={idx} className='line'></div> : null}
           </div>
         })
       }
