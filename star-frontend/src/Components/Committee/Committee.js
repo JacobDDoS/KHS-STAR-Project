@@ -9,7 +9,6 @@ const Committee = ({data}) => {
         data.map((committee, idx) => {
           return <div key={committee.id}> 
             <CommitteeEvent data={committee} key={committee.id}/>
-            {idx !== data.length-1 ? <div key={idx} className='line'></div> : null}
           </div>
         })
       }
