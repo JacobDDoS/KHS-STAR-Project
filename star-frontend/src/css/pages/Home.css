@@ -3,14 +3,18 @@ div{
 }
 
 .home-main-title{
-    font-family: var(--ff-primary);
-    margin:auto;
-    margin-top: 0.25em;
-    margin-bottom: 0.5em;
+    /* background-color: var(--tertiary-gray); */
+    font-family: robotoslab;
     font-size: 90px;
-    width: 80%;
-    border-radius: 0.05em;
-    padding: 0.5em;
+    padding: 0.1em;
+}
+
+.home-title-div{
+    border: 20px dotted var(--primary-red);
+    width: min(80%, 65em);
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
 }
 
 .display-case{
@@ -20,8 +24,7 @@ div{
 .display-img{
     border-radius: 1em;
     aspect-ratio: 8/5;
-    width: min(900px, 70%);
-    
+    width: min(1000px, 85%);
 }
 
 .left-sidebar {

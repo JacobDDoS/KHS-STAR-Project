@@ -10,7 +10,7 @@ const SponsorEvent = ({data}) => {
         <div className='sponsor-secondary-div'>
 
             {/* Company name */}
-            <h2 className='sponsor-header'>{data.companyName}</h2>
+            <p className='sponsor-header'>{data.companyName}</p>
 
             {/* Image */}
             <img src={data.logoURL} alt={data.companyName} className='sponsor-img'/>

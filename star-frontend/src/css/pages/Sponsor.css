@@ -1,15 +1,17 @@
-.sponsor-secondary-div{
-
+.sponsor-img{
+    width: min(80%, 50em);
 }
 
 .sponsor-header{
-
+    font-size: 2.5em;
+    font-weight: 500;
+    text-decoration: 5px underline red;
+    margin-bottom: 0.5em;
 }
 
-.sponsor-img{
-    height: 20em;
-}
-
-.sponsor-content{
-
+.sponsor-secondary-div{
+    margin: auto;
+    width: min(90%, 90em);
+    padding-bottom: 2em;
+    border-bottom: 3px solid red;
 }

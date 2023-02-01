@@ -57,7 +57,9 @@ const HomePage = () => {
         </div>
         : null}      
         <div className='center-div'>
+          <div className='home-title-div'>
             <h1 className='home-main-title'>Kearney High FCCLA</h1>
+          </div>
 
             <div>
               <div className='center-div'>
