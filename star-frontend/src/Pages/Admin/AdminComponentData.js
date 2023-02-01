@@ -30,7 +30,7 @@ export const AdminComponentData = () => {
                 return <div key={piece.id} className='flex' style={{"width": "50%", "border": "2px solid red", "flexDirection": "column", "margin": "auto"}} onClick={()=>changeRoute(`/admin/edit/${component}/${piece.id}`)}>
                     {
                         Object.entries(piece).map((entry) => {
-                            return <p><b>{entry[0]}:</b> {entry[1].length > 200 ? <b>More than 200 letters of text</b> : entry[1]}</p>
+                            return <p><b>{entry[0]}:</b> {entry && entry[1] && entry[1].length > 200 ? <b>More than 200 letters of text</b> : entry[1]}</p>
                         })
                     }
                 </div>
