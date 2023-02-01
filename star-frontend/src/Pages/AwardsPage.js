@@ -10,6 +10,11 @@ const AwardsPage = () => {
     useEffect(()=>{
         //Get and set awards data
         getAwards().then((data) => {
+            data.sort((a, b) => {
+          const aDate = new Date(a.date);
+          const bDate = new Date(b.date);
+          return  bDate.getTime() - aDate.getTime()
+            })
             setAwardsData(data);
             console.log(data);
         });

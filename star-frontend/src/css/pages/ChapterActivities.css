@@ -1,6 +1,8 @@
 .chapterActivity-main-container {
     width: 80%;
     margin: auto;
+    padding-bottom: 3em;
+    border-bottom: 6px dotted grey;
 }
 
 .chapterActivity-image {
@@ -26,12 +28,13 @@
 
 .chapterActivity-title {
     font-size: var(--fs-700);
-    color: var(--primary-red)
+    color: var(--primary-red);
+    margin-bottom: 0.75em; 
 }
 
 .chapterActivity-date-container {
-    margin-top: 20px;
-    font-size: var(--fs-400)
+    margin-bottom: 15px;
+    font-size: var(--fs-400);
 }
 
 .chapterActivity-description-container {

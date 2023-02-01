@@ -11,18 +11,18 @@ const TeamsEvent = ({data}) => {
 
             {/* Captians */}
             <div className='teams-tertiary-div'>
-              <h2 className='teams-header'>Captains</h2>
-              <p className='teams-captains'>{data.teamCaptains}</p>
+              <h2 className='teams-header'>Captains:</h2>
+              <p className='teams-content'>{data.teamCaptains}</p>
             </div>
 
             {/* Members */}
             <div className='teams-tertiary-div'>
-              <h2 className='teams-header'>Members</h2>
+              <h2 className='teams-header'>Members: </h2>
               <p className='teams-content'>Members: {data.members}</p>
             </div>
             {/* Score */}
             <div className='teams-tertiary-div'>
-            <h2 className='teams-header'>Score</h2>
+            <h2 className='teams-header'>Score: </h2>
             <p className='teams-content'>{data.score}</p>
           </div>
         </div>
