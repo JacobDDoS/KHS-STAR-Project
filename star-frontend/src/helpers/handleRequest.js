@@ -15,6 +15,10 @@ export const handleRequest = async (method, path, payload = "") => {
     }
 
     return fetch(`${serverURL}${path}`, opts)
-    .then(res => res.json())
-    .then(data => data);
+    .then(res => {
+        return res.json()
+    })
+    .then(data => {
+        return data;
+    });
   }
