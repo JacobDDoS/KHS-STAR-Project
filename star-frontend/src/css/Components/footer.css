@@ -1,0 +1,30 @@
+.footer-container {
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-red);
+
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container > div {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-container .fa-instagram {
+    color: white;
+}
+
+.footer-copyright-container {
+    width: 33%;
+}
+
+.footer-view-counter-container {
+    width: 33%;
+}

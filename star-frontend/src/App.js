@@ -24,6 +24,7 @@ import Membership from './Pages/MembershipPage';
 import ChapterActivities from './Components/ChapterActivities';
 import ChapterActivitiesPage from './Pages/ChapterActivitiesPage';
 import STARDocumentationPage from './Pages/STARDocumentationPage';
+import { Footer } from './Components/Footer';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Route path="/FCCLA-chapterActivities" element={<ChapterActivitiesPage/>}/>
         <Route path="/FCCLA-STARDocumentation" element={<STARDocumentationPage/>}/>
       </Routes>
+      <Footer />
     </Router>
   );
 }
