@@ -5,11 +5,14 @@ import '../css/pages/Home.css'
 import { getProgramOfWork } from '../data/getProgramOfWork'
 import { getHomeImages } from '../data/Home/getHomeImages'
 import ProgramOfWorkPage from './ProgramOfWorkPage'
+import Membership from '../Components/Membership/Membership.js'
+import { getMembershipInfo } from '../data/getMembershipInfo'
 
 const HomePage = () => {
   const [homeImageData, setHomeImageData] = useState([])
   const [indexOfImage, setIndexOfImage] = useState(0);
   const [programOfWorkData, setProgramOfWorkData] = useState([]);
+  const [membershipData, setMembershipData] = useState([]);
   const [showLeftSideBar, setShowLeftSideBar] = useState(false);
   const [dropdownInfo, setDropDownInfo] = useState([
     //Subtitle, content
@@ -25,6 +28,9 @@ const HomePage = () => {
     })
     getProgramOfWork().then((data)=> {
       setProgramOfWorkData(data);
+    })
+    getMembershipInfo().then((data) => {
+      setMembershipData(data)
     })
     window.addEventListener("resize", handleResize, false);
     setInterval(() => {
@@ -97,7 +103,7 @@ const HomePage = () => {
                       <h3 id='abt-k-fccla'>Why Join FCCLA?</h3>
                   </div>
                   <div className='fccla-answer'>
-                    
+                    <Membership data={membershipData} />
                   </div>
                 </div>
 

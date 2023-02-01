@@ -39,7 +39,7 @@ const Navbar = () => {
             <h2>Kearney High</h2>
             <div className={`pageDisplay ${isMenueOpen ? "pageDisplayOpen" : ""}`}>
                 <div className='sidebar-top'>
-                    <i style={{"margin": "80px 29px 0px 0px"}} className='navbar-icon fa-solid fa-bars fa-xmark' onClick={() => setIsMenueOpen(!isMenueOpen)} />
+                    <i style={{"margin": "80px 0px 0px 0px"}} className='navbar-icon fa-solid fa-bars fa-xmark' onClick={() => setIsMenueOpen(!isMenueOpen)} />
                 </div>
                 <div className='link-div'>
                     {
