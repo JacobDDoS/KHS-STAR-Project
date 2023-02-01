@@ -118,7 +118,7 @@ const HomePage = () => {
                   <br/>
                   <br/>
                       <form action="mailto:kearneyhighfccla@gmail.com" method="post" encType="text/plain">
-                      <h3>Enter your message below</h3>
+                      <h3>Enter your message below or email us at kearneyhighfccla@gmail.com</h3>
                       <br/><textarea name="" id="" cols="60" rows="10"></textarea><br/>
                       <input type="submit" value="Send Message"/>
                     </form>
