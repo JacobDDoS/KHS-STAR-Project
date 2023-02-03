@@ -53,12 +53,12 @@ public class SecurityConfiguration {
 
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        //Create Admin user if it doesn't exist
+        //This will likely be changed later, but for now exists so that if environment variables
+        //in AWS change, then it will change in the database too
         if (userRepository.findFirstByUsernameOrderById(usernameOfAdminUser) == null) {
-            User user = new User(
-                    usernameOfAdminUser,
-                    passwordEncoder.encode(passwordOfAdminUser)
-            );
+            User user = new User();
+            user.setPassword(passwordEncoder.encode(passwordOfAdminUser));
+            user.setUsername(usernameOfAdminUser);
 
             userRepository.save(user);
         }
