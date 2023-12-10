@@ -5,13 +5,14 @@
   box-sizing: border-box;
 
   /* colors */
-  --primary-red: #FF0000;
-  --secondary-red: #F40000;
-  --tertiary-red: #E50000;
+  --primary-red: #ee3e41;
+  --primary-white: #ffffff;
+  --primay-black: #231f1e;
 
-  --primary-gray: #808080;
-  --secondary-gray: #A0A0A0;
-  --tertiary-gray: #C0C0C0;
+  --supporting-orange: #bd2a2a;
+  --supporting-charcoal: #364259;
+  --supporting-blue: #8ca1bc; 
+  --supporting-gray: #8a8c8f;
 
   /* font-sizes */
   --fs-900: 4rem;
@@ -24,7 +25,7 @@
   --fs-200: 0.5rem;
 
   /* font-families */
-  --ff-primary: 'Inter', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
   --ff-secondary: "Ubuntu", sans-serif;
   --ff-tertiary: "Oswald", sans-serif;
 
@@ -48,7 +49,7 @@
 /* Desktop  */
 @media (min-width: 45em) {
   * {
-    --fs-900: 4rem;
+    --fs-900: 6rem;
     --fs-800: 3.5rem;
     --fs-700: 3rem;
     --fs-600: 2.5rem;
@@ -80,12 +81,6 @@
 
 .tertiary-ff {
   font-family: var(--ff-tertiary);
-}
-
-h2 {
-  font-size: var(--fs-800);
-  text-align: center;
-  text-decoration: underline;
 }
 
 

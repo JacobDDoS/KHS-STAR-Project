@@ -1,94 +1,58 @@
 .navbar {
     background-color: var(--primary-red);
-    height: 5em;
+    height: 246px;
     width: 100%;
     z-index: 1;
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-.navbar > h2 {
+.nav-top {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-top h1 {
     text-decoration: none;
     text-align: center;
     color: white;
     width: 100%;
     margin: auto;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-900);
+    padding-top: 0.2em;
+}
+
+.nav-links {
+    margin: auto;
+    height: 123px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-white);
+}
+
+.nav-links h2 {
+    font-size: var(--fs-500);
 }
 
 .logo {
-    position: relative;
-    width: 8em;
-    scale: 70%;
-    z-index: 2;
-}
-
-.navbar-icon {
     position: absolute;
-    scale: 250%;
-    color: white;
-    z-index: 2;
-    padding-bottom: 4em;
-    right: 2em;
+    width: 217px;
+    left: 38px;
+    top: 40px;
 }
 
-.pageDisplay {
-    position: fixed;
-    overflow: scroll;
-    right: min(100%,-36em);
-    background-color: rgb(241, 241, 241);
-    height: 100%;
-    width: 25em;
-    transition: transform 800ms cubic-bezier(.15, .82, .49, .93);
-    border-top-left-radius: 0.75em;
-    opacity: 95%;
-    z-index: 10;
-}
-
-.pageDisplayOpen {
-    transform: translateX(-35em);
-}
-
-.fa-xmark {
+.lock-logo {
     position: absolute;
-    scale: 300%;
-    color: white;
-    z-index: 2;
-    padding-bottom: 3em;
-    right: 2em;
-}
-
-.link-div {
-    width: 100%;
-    height: 100%;
-}
-
-.link {
-    display: flex;
-    font-size: 75px;
-    background-color: white;
-    height: 0.9em;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 0.03em;
-    padding: 10px;
-}
-
-.link p {
-    font-size: var(--fs-400);
-    font-family: var(--ff-primary);
-    margin: auto 0px auto 10px;
-    text-align: left;
-    color: var(--primary-red);
-    text-decoration: none;
-}
-
-.link:link, .link:visited {
-    text-decoration: none;
+    height: 88px;
+    right: 58px;
+    top: 55px;
+    
 }
 
 
-.sidebar-top {
-    background-color: var(--tertiary-red);
-    height: 5em;
-}
