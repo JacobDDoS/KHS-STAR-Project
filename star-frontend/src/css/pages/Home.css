@@ -1,189 +1,33 @@
-div{
-    text-align: center;
+#montage {
+    width: 100vw;
+    height: calc(100vh - 246px - 150px);
 }
 
-.home-main-title{
-    /* background-color: var(--tertiary-gray); */
-    font-family: robotoslab;
-    font-size: 90px;
-    padding: 0.1em;
-}
+.announcment {
+    width: 98%;
+    height: 50px;
+    margin: 7px auto;
+    background-color: var(--supporting-light-gray);
 
-.home-title-div{
-    border: 20px dotted var(--primary-red);
-    width: min(80%, 65em);
-    margin: auto;
-    margin-top: 1.5em;
-    margin-bottom: 3em;
-}
-
-.display-case{
-    margin: auto;
-}
-
-.display-img{
-    border-radius: 1em;
-    aspect-ratio: 8/5;
-    width: min(1000px, 85%);
-}
-
-.left-sidebar {
-    position: absolute;
-    float: left;
-    top: 940px;
-    width: 400px;
-}
-
-.left-sidebar h2 {
-    text-align: left;
-}
-
-.left-sidebar .pow-month-name {
-    font-size: var(--fs-500);
-    text-align: center;
-}
-
-.left-sidebar .pow-month-container {
-    margin: 0px;
-}
-
-.left-sidebar .pow-circle-container {
-    height: 30px;
-    width: 38px;
-    margin: 0px 10px;
-}
-
-.left-sidebar .pow-event-container {
-    min-height: 35px;
-}
-
-.left-sidebar .pow-event-description {
+    text-align: left; 
     font-size: var(--fs-400);
+    display: flex;
+    align-items: center;
 }
 
-.left-sidebar .pow-event-date {
-    font-size: 15px;
+.announcment p {
+    margin-left: 20px;
 }
 
-.left-sidebar .main-title {
-    font-size: var(--fs-700);
+.event {
+    background-color: var(--supporting-light-gray);
+    min-height: 250px;
+    margin: 6px;
 }
 
-.subtitle{
-    font-size: 30px;
-    font-family: var(--ff-tertiary);
-    margin-bottom: 0.5em;
-}
-
-.center-div{
-    width: 100%;
-    align-content: center;
-}
-
-.fccla-question-subtitle {
-    background-color: var(--tertiary-red);
-    width: min(60em, 90%);
-    aspect-ratio: 15/1;
-    margin: auto;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    border-top-left-radius: 0.25em;
-    border-top-right-radius: 0.25em;
-    
-}
-
-.fccla-question-subtitle *{
-    color: white;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -1%;
-    font-size: 50px;
-}
-
-.fccla-answer {
-    width: min(60em, 90%);
-    margin: auto;
-}
-
-.fccla-answer textarea {
-    border: 2px solid var(--primary-red);
-}
-
-.fccla-answer input[type="submit"] {
-    width: 120px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: var(--secondary-red);
-    color: white;
-}
-
-
-#abt-fccla-text{
-    width: min(60em, 90%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0%;
-}
-
-.question-div{
-    color: var(--tertiary-red);
-    float: left;
-    width: 75%;
-    margin: auto;
-    border-top-right-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
+.event h3 {
+    padding-top: 10px;
     text-align: left;
-    font-size: 30px;
-    padding-left: 2%;
-}
-
-.question {
-    background-color: var(--tertiary-gray);
-    border-radius: 00.5em;
-    padding: 0.1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin: 7px;
-}
-
-.answer-div{
-    float: right;
-    width: 75%;
-    margin: auto;
-    border-top-left-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    text-align: right;
-    font-size: 25px;
-    padding-right: 2%;
-
-}
-
-.answer{
-    background-color: var(--tertiary-gray);
-    border-radius: 00.5em;
-    padding: 0.1em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-.creed-div{
-    width: min(90%, 50em);
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: min(5em,10%);
-    background-color: white;
-    align-self: center;
-    padding: 1em;
-    padding-top: 10%;
-}
-
-.creed{
-    margin: auto;
-    display: flex;
-    float: right;
-    font-size: 40px;
-    font-family: var(--ff-secondary);
-    color: var(--secondary-red);
+    font-size: var(--fs-400);
+    margin: 0px 0px 10px 0px;
 }

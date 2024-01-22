@@ -13,6 +13,7 @@
   --supporting-charcoal: #364259;
   --supporting-blue: #8ca1bc; 
   --supporting-gray: #8a8c8f;
+  --supporting-light-gray: #F0F1F2;
 
   /* font-sizes */
   --fs-900: 4rem;
@@ -132,6 +133,11 @@
 }
 
 /* Default styles */
+
+div {
+  text-align: center;
+}
+
 h1 {
   font-size: var(--fs-800);
   font-family: var(--ff-primary);
@@ -139,11 +145,27 @@ h1 {
 
 h2 {
   font-size: var(--fs-600);
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
 }
 
 
+/* Containers */
+.main-body {
+  min-height: calc(100vh - 246px - 150px);
+}
 
+.section {
+  min-height: 200px;
+  margin: 150px;
+}
 
+.section > div {
+  margin: auto;
+}
 
-
+.info-container {
+  background-color: var(--supporting-blue);
+  width: 50vw;
+  min-height: 200px;
+  padding: 1px;
+}
