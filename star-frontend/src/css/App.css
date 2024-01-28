@@ -148,10 +148,14 @@ h2 {
   font-family: var(--ff-primary);
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
 
 /* Containers */
 .main-body {
-  min-height: calc(100vh - 246px - 150px);
+  min-height: calc(100vh - 200px - 150px);
 }
 
 .section {

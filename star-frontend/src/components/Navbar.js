@@ -26,19 +26,46 @@ const Navbar = () => {
 //   ])
 
 const [linkHeaders, setLinkHeaders] = useState(["ABOUT", "STAR", "CALENDER", "MEMBER", "CHAPTER"])
+const [linksInDropdown, setLinksInDropdown] = useState([
+    ["FCCLA", "/FCCLA-info",  "Contacts", "/FCCLA-leadership"],
+    ["Project Summary", "/FCCLA-STARDocumentation", "Design", "/design"],
+    ["Calender", "/FCCLA-programOfWork"],
+    ["Membership", "/FCCLA-membership"],
+    ["Awards", "/FCCLA-awards", "Recruitment", "/FCCLA-recruitment", "Committees", "/FCCLA-committee", "Milestones", "/FCCLA-milestones", "Chapter Teams", "/FCCLA-teams", "Chapter Sponsors", "/FCCLA-sponsors", "Chapter Activities", "/FCCLA-chapterActivities"]
+])
 
   return (
     <div>
         <div className='navbar'>
             <div className='nav-top'>
                 <img className='logo' src={MyImage} alt ="logo"/> 
-                <h1>Kearney High</h1>
+                <h1>
+                    <a href="/">Kearney High</a>
+                </h1>
                 <img className='lock-logo' src={LockImage} alt ="logo"/> 
             </div>
             <div className='nav-links'>
                 {
-                    linkHeaders.map((header) => {
-                        return <h2>{header}</h2>
+                    linkHeaders.map((header, idx) => {
+                        return <div className='nav-link'>
+                            <div className="nav-dropdown">
+                                {
+                                    linksInDropdown[idx].map((link, idx2)=> {
+                                        if (idx2 % 2 == 1 || linksInDropdown[idx].length <= 2) {
+                                            return;
+                                        }
+                                        return <a href={linksInDropdown[idx][idx2+1]} className="nav-dropdown-link">
+                                            {linksInDropdown[idx][idx2]}
+                                        </a>
+                                    })
+                                }
+                            </div>
+                            <div style={{"height": "100%", "display": "flex", "alignItems": "center"}}>
+                                <h2>
+                                    <a style={{"textDecoration": "none", "color": "var(--primary-white)"}} href={linksInDropdown[idx][1]}>{header}</a>
+                                </h2>
+                            </div>
+                        </div>
                     })
                 }
             </div>

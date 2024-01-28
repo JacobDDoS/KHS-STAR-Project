@@ -41,10 +41,10 @@ function App() {
 
         <Route path="/design" element={<Design/>} />
         <Route path="/" element={<HomePage/>} />
-        <Route path="/FCCLA-info" element={<ClubInfoPage/>} />
+        <Route path="/FCCLA-info" element={<ClubInfoPage/>} /> 
         <Route path="/FCCLA-leadership" element = {<LeadershipPage/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
-        <Route path="/awards" element={<AwardsPage/>}/>
+        <Route path="/FCCLA-awards" element={<AwardsPage/>}/>
         <Route path="/FCCLA-recruitment" element={<RecruitmentPage/>}/>
         <Route path="/FCCLA-committee" element={<CommitteePage/>}/>
         <Route path="/FCCLA-programOfWork" element={<ProgramOfWorkPage/>}/>
