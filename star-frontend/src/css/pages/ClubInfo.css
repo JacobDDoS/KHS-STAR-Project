@@ -1,33 +1,37 @@
-.trivia-center-div{
+.about-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+}
+
+.about-info-container {
+    min-height: 100px;
+    background-color: var(--supporting-blue);
+}
+
+.about-info-container > ol{
+    font-size: var(--fs-300);
+    font-weight: 500;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-img-container {
     margin: auto;
-    width: min(100%, 60em);
-    padding: 1em;
+    max-width: 1000px;
+    height: 350px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.0), var(--primary-red));
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
 }
 
-.trivia-content-div {
-    margin: auto;
-    width: min(95%, 85em);
-    margin-bottom: 2.5em;
-    padding: 1.5em;
-}
-
-.ClubInfo-sub-div{
-    /* background-color: var(--tertiary-gray); */
-    margin-top: 5%;
-    padding-bottom: 0.5em;
-    border-bottom: 5px dotted red;
-}
-
-.ClubInfo-header {
-    color: var(--primary-red);
-}
-
-.ClubInfo-content {
-    margin-right: 0em;
-    font-size: 1.5em;
-}
-
-.ClubInfo-img {
-    width: min(75%, 40em);
-    border-radius: 0.25em;
+.about-img-container > img {
+    aspect-ratio: 1;
+    padding: 10px;
 }
