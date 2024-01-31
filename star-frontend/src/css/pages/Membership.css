@@ -1,44 +1,57 @@
-.membership-generalInfo-div{
-    display: grid;
-    padding-bottom: 5em;
-    border-bottom: 5px dotted red;
+.member-body {
+    max-width: 1500px;
     margin: auto;
-    width: min(85%, 60em);
 }
 
-.membership-div{
-    margin: 1em;
+.member-heading-1 {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.main-title{
-    margin-bottom: 0.5em;
-    font-size: 90px;
+.member-heading-1 h1 {
+    text-align: left;
+    font-weight: 900;
+    font-size: var(--fs-900);
 }
 
-.membership-content{
-    font-size: 2em;
-    font-weight: 100px;
+.member-heading-1 img {
+    margin-left: 50px;
 }
 
-.membership-header{
-    text-decoration: 4px underline red;
-    font-size: 2.5em;
+.member-heading-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-/*        More about being a member          */
-
-.membership-reasons-div{
-    /* background-color: grey; */
-    margin-bottom: 2em;
+.member-heading-2 h2 {
+    text-align: left;
+    font-weight: 600;
+    font-size: var(--fs-800);
 }
 
-.membership-subject-header{
-    margin-top: 2em;
-    font-size: 3em;
+.member-heading-2 img {
+    border-radius: 0px;
+    margin-left: 50px;
 }
 
-.membership-image{
-    margin-top: 0.25em;
-    width: min(80%, 35em);
-    border-radius: 0.5em;
+.member-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.member-section h3 {
+    text-align: left;
+    font-weight: 400;
+    font-size: var(--fs-600);
+    padding-left: 20px;
+    max-width: 50%;
+}
+
+.member-section img {
+    max-width: 50%;
 }

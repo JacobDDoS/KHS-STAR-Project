@@ -8,12 +8,16 @@
 }
 
 .about-info-container {
-    min-height: 100px;
-    background-color: var(--supporting-blue);
+    min-height: 150px;
+    padding: 25px;
+    background-color: var(--supporting-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-info-container > ol{
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     font-weight: 500;
     padding-left: 20px;
     text-align: left;
@@ -21,9 +25,9 @@
 
 .about-img-container {
     margin: auto;
-    max-width: 1000px;
-    height: 350px;
-    background: linear-gradient(45deg, rgba(0,0,0,0.0), var(--primary-red));
+    max-width: 1200px;
+    height: 370px;
+    background: var(--primary-red);
 
     display: flex;
     justify-content: space-evenly;

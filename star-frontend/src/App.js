@@ -4,12 +4,10 @@ import DesignPage from './Pages/DesignPage';
 import Navbar from './Components/Navbar';
 import HomePage from '../src/Pages/HomePage';
 import ClubInfoPage from './Pages/ClubInfoPage';
-import LeadershipPage from './Pages/LeadershipPage';
-import MembershipPage from './Pages/MembershipPage';
+import CalenderPage from './Pages/CalenderPage'
 import AwardsPage from './Pages/AwardsPage';
 import RecruitmentPage from './Pages/RecruitmentPage';
 import CommitteePage from './Pages/CommitteePage';
-import ProgramOfWorkPage from './Pages/ProgramOfWorkPage';
 import MilestonesPage from './Pages/MileStonePage';
 import TeamsPage from './Pages/TeamsPage';
 import SponsorPage from './Pages/SponsorPage';
@@ -21,10 +19,12 @@ import { AdminIndividualComponentData } from './Pages/Admin/AdminIndividualCompo
 import { AdminAddData } from './Pages/Admin/AdminAddData';
 import Design from './Pages/DesignPage';
 import Membership from './Pages/MembershipPage';
-import ChapterActivities from './Components/ChapterActivities';
-import ChapterActivitiesPage from './Pages/ChapterActivitiesPage';
+import ChapterActivitiesPage from './Pages/CalenderPage';
 import STARDocumentationPage from './Pages/STARDocumentationPage';
 import { Footer } from './Components/Footer';
+import ContactPage from './Pages/ContactPage';
+import OfficerPage from './Pages/OfficerPage';
+import OfficerExpectation from './Pages/OfficerExpectation';
 
 function App() {
   return (
@@ -42,17 +42,19 @@ function App() {
         <Route path="/design" element={<Design/>} />
         <Route path="/" element={<HomePage/>} />
         <Route path="/FCCLA-info" element={<ClubInfoPage/>} /> 
-        <Route path="/FCCLA-leadership" element = {<LeadershipPage/>}/>
+        <Route path="/FCCLA-contact" element = {<ContactPage/>}/>
         <Route path="/FCCLA-membership" element= {<Membership/>}/>
         <Route path="/FCCLA-awards" element={<AwardsPage/>}/>
         <Route path="/FCCLA-recruitment" element={<RecruitmentPage/>}/>
         <Route path="/FCCLA-committee" element={<CommitteePage/>}/>
-        <Route path="/FCCLA-programOfWork" element={<ProgramOfWorkPage/>}/>
+        <Route path="/FCCLA-calender" element={<CalenderPage/>}/>
         <Route path="/FCCLA-milestones" element={<MilestonesPage/>}/>
         <Route path="/FCCLA-teams" element={<TeamsPage/>}/>
         <Route path="/FCCLA-sponsors" element={<SponsorPage/>}/>
         <Route path="/FCCLA-chapterActivities" element={<ChapterActivitiesPage/>}/>
         <Route path="/FCCLA-STARDocumentation" element={<STARDocumentationPage/>}/>
+        <Route path="/FCCLA-officers" element={<OfficerPage/>} />
+        <Route path="FCCLA-officer-expectations" element={<OfficerExpectation/>} />
       </Routes>
       <Footer />
     </Router>

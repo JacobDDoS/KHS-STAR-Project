@@ -1,0 +1,17 @@
+.chapter-activity {
+    min-height: 150px;
+    background-color: var(--supporting-light-gray);
+    margin: 10px;
+    padding: 10px;
+}
+
+.chapter-activity h3{
+    font-size: var(--fs-400);
+    margin-bottom: 20px;
+}
+
+.chapter-activity p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

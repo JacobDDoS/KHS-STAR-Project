@@ -159,11 +159,19 @@ div {
 h1 {
   font-size: var(--fs-800);
   font-family: var(--ff-primary);
+  font-weight: 600;
 }
 
 h2 {
   font-size: var(--fs-600);
   font-family: var(--ff-primary);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: var(--fs-500);
+  font-family: var(--ff-primary);
+  font-weight: 400;
 }
 
 a {
@@ -171,6 +179,9 @@ a {
   color: var(--primary-white);
 }
 
+img {
+  border-radius: 15px;
+}
 
 /* Containers */
 .main-body {

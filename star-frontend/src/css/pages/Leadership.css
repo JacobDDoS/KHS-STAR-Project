@@ -1,66 +1,20 @@
-.leadership-content-div{
-    padding: 1em;
-    margin: auto;
-    width: min(90%, 50em);
-    border-bottom: 4px ridge red;
-    display: flex;
+.contact {
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
-.leadership-tertiary-div{
-    float: right;
-    display: grid;
-    padding-right: min(100%, 0.1em);
+.contact img {
+    height: 350px;
+    width: 250px;
 }
 
-.leadership-img{
-    margin: auto;
-    display: flex;
-    float: left;
-    border-radius: 00.5em;
-    width: min(45%, 25em);
+.contact h2 {
+    text-align: left;
+    padding-top: 25px;
+    font-size: var(--fs-700);
 }
 
-.leadership-name{
-    margin: auto;
-    color: var(--primary-red);
-    font-family: var(--ff-primary);
-    text-decoration: underline;
-}
-
-.leadership-title{
-    margin: auto;
-    padding: 0.25em;
-    font-family: var(--ff-secondary);
-    font-size: 1.75em;
-}
-
-.leadership-goals{
-    font-family: var(--ff-tertiary);
-    font-size: 30px;
-}
-
-.leadership-date{
-    font-family: var(--ff-secondary);
-    padding-top: 0.75em;
-}
-
-
-.leadership-expectations-div{
-    margin: auto;
-    width: min(80%, 60em);
-}
-
-.leadership-expectaions-header{
-    font-size: 3.5em;
-    margin-top: 1.25em;
-    margin-bottom: 0.5em;
-    font-weight: 400;
-}
-
-.leadership-expecations{
-    font-family: var(--ff-secondary);
-    font-size: 1.25em;
-    margin-bottom: 1em;
-    font-weight: 270;
-    border-bottom: 3px solid grey ;
+.contact h3 {
+    text-align: left;
+    font-size: var(--fs-400);
 }

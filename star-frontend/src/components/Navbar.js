@@ -27,11 +27,11 @@ const Navbar = () => {
 
 const [linkHeaders, setLinkHeaders] = useState(["ABOUT", "STAR", "CALENDER", "MEMBER", "CHAPTER"])
 const [linksInDropdown, setLinksInDropdown] = useState([
-    ["FCCLA", "/FCCLA-info",  "Contacts", "/FCCLA-leadership"],
+    ["FCCLA", "/FCCLA-info",  "Contacts", "/FCCLA-contact"],
     ["Project Summary", "/FCCLA-STARDocumentation", "Design", "/design"],
-    ["Calender", "/FCCLA-programOfWork"],
+    ["Calender", "/FCCLA-calender"],
     ["Membership", "/FCCLA-membership"],
-    ["Awards", "/FCCLA-awards", "Recruitment", "/FCCLA-recruitment", "Committees", "/FCCLA-committee", "Milestones", "/FCCLA-milestones", "Chapter Teams", "/FCCLA-teams", "Chapter Sponsors", "/FCCLA-sponsors", "Chapter Activities", "/FCCLA-chapterActivities"]
+    ["Awards", "/FCCLA-awards", "Chapter Sponsors", "/FCCLA-sponsors", "Chapter Officers", "/FCCLA-officers"]
 ])
 
   return (
